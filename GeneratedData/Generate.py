@@ -19,20 +19,22 @@ class Numeric:
         self.decVal = '0'*decPrec #string
         return
     def __str__(self):
-        return f"{self.intVal}.{self.decVal}"
+        return f"{self.intVal[:self.intPrec]}.{self.decVal[:self.decPrec]}"
     
     def assign(self, intVal, decVal = None):
         #To-do: Needs formatting to pad left
-        self.intVal = f"{intVal}" #string
-        if decVal not None:
-            self.decVal = f"{decVal}" #string
+        self.intVal = f"{intVal:0{self.intPrec}d}" #string
+        self.intVal = self.intVal[:self.intPrec]
+        if decVal != None:
+            self.decVal = f"{decVal:0{self.intPrec}d}" #string
+            self.decVal = self.decVal[:self.decPrec]
         return
 
     def randAssign(self, numMin, numMax):
 
         #To-do: Pad based on L/R Precision
-        intMin = int(f"{numMin.intVal}{numMin.decVal}")
-        intMax = int(f"{numMax.intVal}{numMax.decVal}")
+        intMin = int(f"{numMin.intVal[:self.intPrec]}{numMin.decVal[:self.decPrec]}")
+        intMax = int(f"{numMax.intVal[:self.intPrec]}{numMax.decVal[:self.decPrec]}")
         strVal = str(random.randint(intMin, intMax))
 
         self.intVal = strVal[ :self.intPrec]
@@ -94,7 +96,7 @@ class Customers:
         #Address, City, Province, PostalCode
         fields[3], fields[4], fields[5], fields[6] = Generate.location()
         #Email (LName1@email.com)
-        fields[7] = f"{fields[2]}{CID}@email.com"
+        fields[7] = f"{fields[2][:-1]}{CID}@email.com'"
         #Account Creation Date
         fields[8] = Generate.date(2010,2020)
         #Phone number
@@ -218,7 +220,7 @@ class Distributor:
         #DistID
         fields[0] = DistID
         #Dname
-        fields[1] = f"Distributor{DistID}"
+        fields[1] = f"'Distributor{DistID}'"
         #BulkPrice
         fields[2] = Numeric(2,2)
         fields[2].assign(random.randint(5,99), random.randint(0,99))
@@ -232,9 +234,9 @@ class Movie:
     # int rows - number of rows to make
     def write_table(file, dist, rows):
         file.write("INSERT INTO Movie VALUES\n")
-        fields = [None for x in range(7)]
+        fields = [None for x in range(8)]
         for r in range(rows):
-            Movie.make_row(r, fields)
+            Movie.make_row(r, dist.table[r], fields)
             write_query(file, fields)
             if (r == rows-1):
                 file.write(";\n\n")
@@ -252,7 +254,7 @@ class Movie:
         #MovieID
         fields[0] = MovieID
         #Title
-        fields[1] = Generate.Title()
+        fields[1] = f"'Movie{MovieID}'"
         #Genre
         fields[2] = Generate.genre()
         #Quantity
@@ -263,8 +265,10 @@ class Movie:
         #Release
         fields[6] = Generate.date(1950,2020)
         #Price
+        priceMax = Numeric(2,2)
+        priceMax.assign(99,99)
         fields[7] = Numeric(2, 2)
-        fields[7].randAssign(Dist.table[2], Numeric(99,99))
+        fields[7].randAssign(Dist[2], priceMax)
         
         return
 
@@ -311,7 +315,7 @@ class Generate:
         pickF = random.randint(0, len(Fname)-1)
         pickL = random.randint(0, len(Lname)-1)
         
-        return ( Fname[pickF], Lname[pickL] )
+        return ( f"'{Fname[pickF]}'", f"'{Lname[pickL]}'" )
     
     def location(): # address, city, province, pcode
         loc = [None for x in range(4)]
@@ -320,10 +324,10 @@ class Generate:
         province = ["AB", "BC", "ON"]
         pcode = ["A1B2C3", "D4E5F6", "H7J8K9"]
         
-        loc[0] = address[random.randint(0, len(address)-1)]
-        loc[1] = city[random.randint(0, len(city)-1)]
-        loc[2] = province[random.randint(0, len(province)-1)]
-        loc[3] = pcode[random.randint(0, len(pcode)-1)]
+        loc[0] = f"'{address[random.randint(0, len(address)-1)]}'"
+        loc[1] = f"'{city[random.randint(0, len(city)-1)]}'"
+        loc[2] = f"'{province[random.randint(0, len(province)-1)]}'"
+        loc[3] = f"'{pcode[random.randint(0, len(pcode)-1)]}'"
         
         return loc
     
@@ -337,24 +341,27 @@ class Generate:
         for n in range(4):
             phone += str(random.randint(0,9))
         
-        return f"\"{phone}\""
+        return f"'{phone}'"
     
     def demographic(): # Gender, Ethnicity
         # Binary, but can be manually changed
         Gender = ["male", "female"]
         # Covering only continents for ease
         Ethnicity = ["European", "African", "Asian", "Australian",
-                     "\"North American\"", "\"Central American\"", "\"South American\""]
+                     "North American", "Central American", "South American"]
         
         pickG = random.randint(0, len(Gender)-1)
         pickE = random.randint(0, len(Ethnicity)-1)
 
-        return ( Gender[pickG], Ethnicity[pickE] )
+        return ( f"'{Gender[pickG]}'", f"'{Ethnicity[pickE]}'" )
     
     def genre():
-        genres = []
+        genres = ["Horror", "Sci-fi", "Urban Fantasy", "Romance", "Grimdark",
+                  "Mecha", "Action", "Coming-of-age", "True Crime", "Fantasy",
+                  "Drama", "Thriller", "Tragedy", "Historical", "Sports", "Comedy",
+                  "Crime", "Cyberpunk", "Documentary"]
         pick = random.randint(0, len(genres)-1)
-        return genres[pick]
+        return f"'{genres[pick]}'"
 
         
 
@@ -373,7 +380,7 @@ if __name__ == "__main__":
             Actor.write_table(file, rows)
 
             Dist = Distributor()
-            Dist.make_table
+            Dist.make_table(file, rows)
             Dist.write_table(file, rows)
 
             Movie.write_table(file, Dist, rows)

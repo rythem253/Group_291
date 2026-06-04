@@ -1,0 +1,2 @@
+#ignore generations in GeneratedData folder
+GeneratedData/*.sql
