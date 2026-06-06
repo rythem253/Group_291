@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             SelectionScreen = new ReaLTaiizor.Forms.FormTheme();
-            empSelection = new ReaLTaiizor.Controls.CyberButton();
+            lblSelect = new ReaLTaiizor.Controls.NightHeaderLabel();
             customerSelection = new ReaLTaiizor.Controls.CyberButton();
-            nightHeaderLabel1 = new ReaLTaiizor.Controls.NightHeaderLabel();
+            empSelection = new ReaLTaiizor.Controls.CyberButton();
             SelectionScreen.SuspendLayout();
             SuspendLayout();
             // 
             // SelectionScreen
             // 
             SelectionScreen.BackColor = Color.FromArgb(32, 41, 50);
-            SelectionScreen.Controls.Add(nightHeaderLabel1);
+            SelectionScreen.Controls.Add(lblSelect);
             SelectionScreen.Controls.Add(customerSelection);
             SelectionScreen.Controls.Add(empSelection);
             SelectionScreen.Dock = DockStyle.Fill;
@@ -52,48 +52,27 @@
             SelectionScreen.SmartBounds = false;
             SelectionScreen.StartPosition = FormStartPosition.WindowsDefaultLocation;
             SelectionScreen.TabIndex = 0;
-            SelectionScreen.Text = "SelectionScreen";
+            SelectionScreen.Text = " ";
             SelectionScreen.Click += SelectionScreen_Click;
             // 
-            // empSelection
+            // lblSelect
             // 
-            empSelection.Alpha = 20;
-            empSelection.BackColor = Color.Transparent;
-            empSelection.Background = true;
-            empSelection.Background_WidthPen = 4F;
-            empSelection.BackgroundPen = true;
-            empSelection.ColorBackground = Color.FromArgb(37, 52, 68);
-            empSelection.ColorBackground_1 = Color.FromArgb(37, 52, 68);
-            empSelection.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            empSelection.ColorBackground_Pen = Color.FromArgb(29, 200, 238);
-            empSelection.ColorLighting = Color.FromArgb(29, 200, 238);
-            empSelection.ColorPen_1 = Color.FromArgb(37, 52, 68);
-            empSelection.ColorPen_2 = Color.FromArgb(41, 63, 86);
-            empSelection.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            empSelection.Effect_1 = true;
-            empSelection.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
-            empSelection.Effect_1_Transparency = 25;
-            empSelection.Effect_2 = true;
-            empSelection.Effect_2_ColorBackground = Color.White;
-            empSelection.Effect_2_Transparency = 20;
-            empSelection.Font = new Font("Arial", 11F);
-            empSelection.ForeColor = Color.FromArgb(245, 245, 245);
-            empSelection.Lighting = false;
-            empSelection.LinearGradient_Background = false;
-            empSelection.LinearGradientPen = false;
-            empSelection.Location = new Point(201, 176);
-            empSelection.Name = "empSelection";
-            empSelection.PenWidth = 15;
-            empSelection.Rounding = true;
-            empSelection.RoundingInt = 70;
-            empSelection.Size = new Size(162, 62);
-            empSelection.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            empSelection.TabIndex = 4;
-            empSelection.Tag = "Cyber";
-            empSelection.TextButton = "Employee";
-            empSelection.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            empSelection.Timer_Effect_1 = 5;
-            empSelection.Timer_RGB = 300;
+            lblSelect.AutoSize = true;
+            lblSelect.BackColor = Color.Transparent;
+            lblSelect.Font = new Font("Microsoft Sans Serif", 22F);
+            lblSelect.ForeColor = Color.FromArgb(250, 250, 250);
+            lblSelect.LeftSideForeColor = Color.FromArgb(250, 250, 250);
+            lblSelect.Location = new Point(290, 84);
+            lblSelect.Name = "lblSelect";
+            lblSelect.RightSideForeColor = Color.FromArgb(170, 171, 176);
+            lblSelect.Side = ReaLTaiizor.Controls.NightHeaderLabel.PanelSide.LeftPanel;
+            lblSelect.Size = new Size(248, 50);
+            lblSelect.TabIndex = 7;
+            lblSelect.Text = "Please select:";
+            lblSelect.TextAlign = ContentAlignment.MiddleCenter;
+            lblSelect.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            lblSelect.UseCompatibleTextRendering = true;
+            lblSelect.Click += lblSelect_Click;
             // 
             // customerSelection
             // 
@@ -134,24 +113,48 @@
             customerSelection.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             customerSelection.Timer_Effect_1 = 5;
             customerSelection.Timer_RGB = 300;
+            customerSelection.Click += customerSelection_Click;
             // 
-            // nightHeaderLabel1
+            // empSelection
             // 
-            nightHeaderLabel1.AutoSize = true;
-            nightHeaderLabel1.BackColor = Color.Transparent;
-            nightHeaderLabel1.Font = new Font("Microsoft Sans Serif", 22F);
-            nightHeaderLabel1.ForeColor = Color.FromArgb(170, 171, 176);
-            nightHeaderLabel1.LeftSideForeColor = Color.FromArgb(250, 250, 250);
-            nightHeaderLabel1.Location = new Point(290, 84);
-            nightHeaderLabel1.Name = "nightHeaderLabel1";
-            nightHeaderLabel1.RightSideForeColor = Color.FromArgb(170, 171, 176);
-            nightHeaderLabel1.Side = ReaLTaiizor.Controls.NightHeaderLabel.PanelSide.LeftPanel;
-            nightHeaderLabel1.Size = new Size(248, 50);
-            nightHeaderLabel1.TabIndex = 7;
-            nightHeaderLabel1.Text = "Please select:";
-            nightHeaderLabel1.TextAlign = ContentAlignment.MiddleCenter;
-            nightHeaderLabel1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            nightHeaderLabel1.UseCompatibleTextRendering = true;
+            empSelection.Alpha = 20;
+            empSelection.BackColor = Color.Transparent;
+            empSelection.Background = true;
+            empSelection.Background_WidthPen = 4F;
+            empSelection.BackgroundPen = true;
+            empSelection.ColorBackground = Color.FromArgb(37, 52, 68);
+            empSelection.ColorBackground_1 = Color.FromArgb(37, 52, 68);
+            empSelection.ColorBackground_2 = Color.FromArgb(41, 63, 86);
+            empSelection.ColorBackground_Pen = Color.FromArgb(29, 200, 238);
+            empSelection.ColorLighting = Color.FromArgb(29, 200, 238);
+            empSelection.ColorPen_1 = Color.FromArgb(37, 52, 68);
+            empSelection.ColorPen_2 = Color.FromArgb(41, 63, 86);
+            empSelection.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            empSelection.Effect_1 = true;
+            empSelection.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
+            empSelection.Effect_1_Transparency = 25;
+            empSelection.Effect_2 = true;
+            empSelection.Effect_2_ColorBackground = Color.White;
+            empSelection.Effect_2_Transparency = 20;
+            empSelection.Font = new Font("Arial", 11F);
+            empSelection.ForeColor = Color.FromArgb(245, 245, 245);
+            empSelection.Lighting = false;
+            empSelection.LinearGradient_Background = false;
+            empSelection.LinearGradientPen = false;
+            empSelection.Location = new Point(201, 176);
+            empSelection.Name = "empSelection";
+            empSelection.PenWidth = 15;
+            empSelection.Rounding = true;
+            empSelection.RoundingInt = 70;
+            empSelection.Size = new Size(162, 62);
+            empSelection.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            empSelection.TabIndex = 4;
+            empSelection.Tag = "Cyber";
+            empSelection.TextButton = "Employee";
+            empSelection.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            empSelection.Timer_Effect_1 = 5;
+            empSelection.Timer_RGB = 300;
+            empSelection.Click += empSelection_Click;
             // 
             // Form1
             // 
@@ -162,7 +165,7 @@
             FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(126, 50);
             Name = "Form1";
-            Text = "SelectionScreen";
+            Text = " ";
             TransparencyKey = Color.Fuchsia;
             Load += Form1_Load;
             SelectionScreen.ResumeLayout(false);
@@ -175,6 +178,6 @@
         private ReaLTaiizor.Forms.FormTheme SelectionScreen;
         private ReaLTaiizor.Controls.CyberButton empSelection;
         private ReaLTaiizor.Controls.CyberButton customerSelection;
-        private ReaLTaiizor.Controls.NightHeaderLabel nightHeaderLabel1;
+        private ReaLTaiizor.Controls.NightHeaderLabel lblSelect;
     }
 }
