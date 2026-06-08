@@ -21,5 +21,20 @@ namespace Project
         {
 
         }
+
+        private void authEmailEmp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void crownTitle1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

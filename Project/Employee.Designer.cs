@@ -28,56 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            formTheme1 = new ReaLTaiizor.Forms.FormTheme();
-            authEmailEmp = new ReaLTaiizor.Controls.FoxBigLabel();
-            crownTextBox1 = new ReaLTaiizor.Controls.CrownTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
+            skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
+            crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
+            pictureBox1 = new PictureBox();
             submitBtn = new ReaLTaiizor.Controls.Button();
-            formTheme1.SuspendLayout();
+            crownTextBox1 = new ReaLTaiizor.Controls.CrownTextBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // formTheme1
+            // skyLabel1
             // 
-            formTheme1.BackColor = Color.FromArgb(32, 41, 50);
-            formTheme1.Controls.Add(submitBtn);
-            formTheme1.Controls.Add(authEmailEmp);
-            formTheme1.Controls.Add(crownTextBox1);
-            formTheme1.Dock = DockStyle.Fill;
-            formTheme1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            formTheme1.ForeColor = Color.FromArgb(142, 142, 142);
-            formTheme1.Location = new Point(0, 0);
-            formTheme1.Name = "formTheme1";
-            formTheme1.Padding = new Padding(3, 28, 3, 28);
-            formTheme1.Sizable = true;
-            formTheme1.Size = new Size(800, 450);
-            formTheme1.SmartBounds = false;
-            formTheme1.StartPosition = FormStartPosition.WindowsDefaultLocation;
-            formTheme1.TabIndex = 0;
-            formTheme1.Text = " ";
-            formTheme1.Click += formTheme1_Click;
+            skyLabel1.AutoSize = true;
+            skyLabel1.BackColor = Color.Transparent;
+            skyLabel1.Font = new Font("Verdana", 15F, FontStyle.Bold);
+            skyLabel1.ForeColor = Color.White;
+            skyLabel1.Location = new Point(222, 265);
+            skyLabel1.Name = "skyLabel1";
+            skyLabel1.Size = new Size(92, 31);
+            skyLabel1.TabIndex = 17;
+            skyLabel1.Text = "Email";
             // 
-            // authEmailEmp
+            // crownLabel1
             // 
-            authEmailEmp.BackColor = Color.Transparent;
-            authEmailEmp.Font = new Font("Segoe UI Semibold", 20F);
-            authEmailEmp.ForeColor = Color.White;
-            authEmailEmp.Line = ReaLTaiizor.Controls.FoxBigLabel.Direction.Bottom;
-            authEmailEmp.LineColor = Color.FromArgb(200, 200, 200);
-            authEmailEmp.Location = new Point(56, 194);
-            authEmailEmp.Name = "authEmailEmp";
-            authEmailEmp.Size = new Size(363, 51);
-            authEmailEmp.TabIndex = 1;
-            authEmailEmp.Text = "Please enter your email:]";
+            crownLabel1.AutoSize = true;
+            crownLabel1.BackColor = Color.Transparent;
+            crownLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            crownLabel1.ForeColor = Color.Transparent;
+            crownLabel1.Location = new Point(248, 212);
+            crownLabel1.Name = "crownLabel1";
+            crownLabel1.Size = new Size(297, 28);
+            crownLabel1.TabIndex = 14;
+            crownLabel1.Text = "Welcome Back, Team Member";
             // 
-            // crownTextBox1
+            // pictureBox1
             // 
-            crownTextBox1.BackColor = Color.FromArgb(69, 73, 74);
-            crownTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            crownTextBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            crownTextBox1.ForeColor = Color.Silver;
-            crownTextBox1.Location = new Point(439, 205);
-            crownTextBox1.Name = "crownTextBox1";
-            crownTextBox1.Size = new Size(232, 30);
-            crownTextBox1.TabIndex = 0;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(323, 69);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(150, 117);
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
             // 
             // submitBtn
             // 
@@ -85,40 +77,58 @@
             submitBtn.BorderColor = Color.White;
             submitBtn.EnteredBorderColor = Color.FromArgb(165, 37, 37);
             submitBtn.EnteredColor = Color.White;
-            submitBtn.Font = new Font("Microsoft Sans Serif", 12F);
+            submitBtn.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             submitBtn.Image = null;
             submitBtn.ImageAlign = ContentAlignment.MiddleLeft;
             submitBtn.InactiveColor = Color.FromArgb(32, 34, 37);
-            submitBtn.Location = new Point(482, 268);
+            submitBtn.Location = new Point(323, 321);
+            submitBtn.Margin = new Padding(5);
             submitBtn.Name = "submitBtn";
             submitBtn.PressedBorderColor = Color.FromArgb(165, 37, 37);
             submitBtn.PressedColor = Color.FromArgb(165, 37, 37);
             submitBtn.Size = new Size(150, 50);
-            submitBtn.TabIndex = 2;
+            submitBtn.TabIndex = 13;
             submitBtn.Text = "Submit";
             submitBtn.TextAlignment = StringAlignment.Center;
+            // 
+            // crownTextBox1
+            // 
+            crownTextBox1.BackColor = Color.FromArgb(69, 73, 74);
+            crownTextBox1.BorderStyle = BorderStyle.FixedSingle;
+            crownTextBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            crownTextBox1.ForeColor = Color.Silver;
+            crownTextBox1.Location = new Point(351, 266);
+            crownTextBox1.Name = "crownTextBox1";
+            crownTextBox1.Size = new Size(232, 30);
+            crownTextBox1.TabIndex = 12;
             // 
             // Employee
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(formTheme1);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(800, 471);
+            Controls.Add(skyLabel1);
+            Controls.Add(crownLabel1);
+            Controls.Add(pictureBox1);
+            Controls.Add(submitBtn);
+            Controls.Add(crownTextBox1);
             FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(126, 50);
             Name = "Employee";
             Text = " ";
             TransparencyKey = Color.Fuchsia;
-            formTheme1.ResumeLayout(false);
-            formTheme1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private ReaLTaiizor.Forms.FormTheme formTheme1;
-        private ReaLTaiizor.Controls.CrownTextBox crownTextBox1;
-        private ReaLTaiizor.Controls.FoxBigLabel authEmailEmp;
+        private ReaLTaiizor.Controls.SkyLabel skyLabel1;
+        private ReaLTaiizor.Controls.CrownLabel crownLabel1;
+        private PictureBox pictureBox1;
         private ReaLTaiizor.Controls.Button submitBtn;
+        private ReaLTaiizor.Controls.CrownTextBox crownTextBox1;
     }
 }

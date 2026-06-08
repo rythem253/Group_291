@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class Customer : Form
+    public partial class customerPortal : Form
     {
-        public Customer()
+        public customerPortal()
         {
             InitializeComponent();
-        }
-
-        private void Customer_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
