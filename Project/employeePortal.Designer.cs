@@ -115,6 +115,7 @@
             btnRentals.TabIndex = 3;
             btnRentals.Text = "Manage Rentals";
             btnRentals.TextAlignment = StringAlignment.Center;
+            btnRentals.Click += btnRentals_Click;
             // 
             // btnLogout
             // 

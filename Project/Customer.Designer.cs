@@ -91,6 +91,7 @@
             inputTxtCust.Name = "inputTxtCust";
             inputTxtCust.Size = new Size(232, 30);
             inputTxtCust.TabIndex = 12;
+            inputTxtCust.TextChanged += inputTxtCust_TextChanged;
             // 
             // picUser
             // 

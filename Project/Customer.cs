@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
+
 
 namespace Project
 {
     public partial class Customer : Form
     {
-        public Customer()
+        private string connectionString;
+
+        public Customer(string connString)
         {
             InitializeComponent();
+            connectionString = connString;
         }
 
         private void Customer_Load(object sender, EventArgs e)
@@ -27,23 +32,28 @@ namespace Project
         }
 
         private void submitBtn_Click(object sender, EventArgs e)
-        {
-            string dummy = "r@mail.com";
+        {  
+            string customerName = inputTxtCust.Text;
+            Customer_Load(customerName);
+        }
 
-            //SQL Query EG: SELECT FROM EMPLOYEE DATABASE, WHERE EMAIL CONTAINS THE TYPED EMAIL
-            if (inputTxtCust.Text == dummy)
+        private void Customer_Load(string customerName)
+        {
+
+            string query = "SELECT * FROM Customers WHERE FName = @Name";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                customerPortal customerPortal = new customerPortal();
-                customerPortal.Show();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                adapter.SelectCommand.Parameters.AddWithValue("@Name", customerName);
+                
             }
-            else
-            {
-                //ELSE IF
-                //NOT CONTAIN, THEN ERROR DIALOG
-                MessageBox.Show("Invalid email!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+        }
+
+        private void inputTxtCust_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
-    }
+}
 
