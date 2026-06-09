@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
-            skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
+            lblMail = new ReaLTaiizor.Controls.SkyLabel();
             crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
             submitBtn = new ReaLTaiizor.Controls.Button();
-            crownTextBox1 = new ReaLTaiizor.Controls.CrownTextBox();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            inputTxtCust = new ReaLTaiizor.Controls.CrownTextBox();
+            picUser = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picUser).BeginInit();
             SuspendLayout();
             // 
-            // skyLabel1
+            // lblMail
             // 
-            skyLabel1.AutoSize = true;
-            skyLabel1.BackColor = Color.Transparent;
-            skyLabel1.Font = new Font("Verdana", 15F, FontStyle.Bold);
-            skyLabel1.ForeColor = Color.White;
-            skyLabel1.Location = new Point(244, 253);
-            skyLabel1.Name = "skyLabel1";
-            skyLabel1.Size = new Size(92, 31);
-            skyLabel1.TabIndex = 18;
-            skyLabel1.Text = "Email";
+            lblMail.AutoSize = true;
+            lblMail.BackColor = Color.Transparent;
+            lblMail.Font = new Font("Verdana", 15F, FontStyle.Bold);
+            lblMail.ForeColor = Color.White;
+            lblMail.Location = new Point(244, 253);
+            lblMail.Name = "lblMail";
+            lblMail.Size = new Size(92, 31);
+            lblMail.TabIndex = 18;
+            lblMail.Text = "Email";
             // 
             // crownLabel1
             // 
@@ -79,27 +79,28 @@
             submitBtn.TabIndex = 13;
             submitBtn.Text = "Submit";
             submitBtn.TextAlignment = StringAlignment.Center;
+            submitBtn.Click += submitBtn_Click;
             // 
-            // crownTextBox1
+            // inputTxtCust
             // 
-            crownTextBox1.BackColor = Color.FromArgb(69, 73, 74);
-            crownTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            crownTextBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            crownTextBox1.ForeColor = Color.Silver;
-            crownTextBox1.Location = new Point(352, 259);
-            crownTextBox1.Name = "crownTextBox1";
-            crownTextBox1.Size = new Size(232, 30);
-            crownTextBox1.TabIndex = 12;
+            inputTxtCust.BackColor = Color.FromArgb(69, 73, 74);
+            inputTxtCust.BorderStyle = BorderStyle.FixedSingle;
+            inputTxtCust.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            inputTxtCust.ForeColor = Color.Silver;
+            inputTxtCust.Location = new Point(352, 259);
+            inputTxtCust.Name = "inputTxtCust";
+            inputTxtCust.Size = new Size(232, 30);
+            inputTxtCust.TabIndex = 12;
             // 
-            // pictureBox1
+            // picUser
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(352, 63);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(155, 166);
-            pictureBox1.TabIndex = 20;
-            pictureBox1.TabStop = false;
+            picUser.BackColor = Color.Transparent;
+            picUser.Image = (Image)resources.GetObject("picUser.Image");
+            picUser.Location = new Point(352, 63);
+            picUser.Name = "picUser";
+            picUser.Size = new Size(155, 166);
+            picUser.TabIndex = 20;
+            picUser.TabStop = false;
             // 
             // Customer
             // 
@@ -108,28 +109,28 @@
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(862, 492);
-            Controls.Add(pictureBox1);
-            Controls.Add(skyLabel1);
+            Controls.Add(picUser);
+            Controls.Add(lblMail);
             Controls.Add(crownLabel1);
             Controls.Add(submitBtn);
-            Controls.Add(crownTextBox1);
+            Controls.Add(inputTxtCust);
             ForeColor = Color.OrangeRed;
             FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(126, 50);
             Name = "Customer";
             TransparencyKey = Color.Fuchsia;
             Load += Customer_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picUser).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ReaLTaiizor.Controls.SkyLabel skyLabel1;
+        private ReaLTaiizor.Controls.SkyLabel lblMail;
         private ReaLTaiizor.Controls.CrownLabel crownLabel1;
         private ReaLTaiizor.Controls.Button submitBtn;
-        private ReaLTaiizor.Controls.CrownTextBox crownTextBox1;
-        private PictureBox pictureBox1;
+        private ReaLTaiizor.Controls.CrownTextBox inputTxtCust;
+        private PictureBox picUser;
     }
 }

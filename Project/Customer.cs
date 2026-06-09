@@ -21,5 +21,29 @@ namespace Project
         {
 
         }
+
+        private void inputTxtCustomer(object sender, EventArgs e)
+        {
+        }
+
+        private void submitBtn_Click(object sender, EventArgs e)
+        {
+            string dummy = "r@mail.com";
+
+            //SQL Query EG: SELECT FROM EMPLOYEE DATABASE, WHERE EMAIL CONTAINS THE TYPED EMAIL
+            if (inputTxtCust.Text == dummy)
+            {
+                customerPortal customerPortal = new customerPortal();
+                customerPortal.Show();
+            }
+            else
+            {
+                //ELSE IF
+                //NOT CONTAIN, THEN ERROR DIALOG
+                MessageBox.Show("Invalid email!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
-}
+    }
+

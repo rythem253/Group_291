@@ -91,7 +91,7 @@
             btnMovieCasting.Location = new Point(315, 230);
             btnMovieCasting.Name = "btnMovieCasting";
             btnMovieCasting.PressedBorderColor = Color.Black;
-            btnMovieCasting.PressedColor = Color.Black;
+            btnMovieCasting.PressedColor = Color.FromArgb(165, 37, 37);
             btnMovieCasting.Size = new Size(230, 50);
             btnMovieCasting.TabIndex = 2;
             btnMovieCasting.Text = "Movie Casting";
