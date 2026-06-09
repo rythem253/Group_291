@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 namespace Project
 {
     public partial class Employee : Form
     {
-        public Employee()
+
+        private string connectionString;
+
+        public Employee(string connString)
         {
             InitializeComponent();
+            connectionString = connString;
         }
 
         private void formTheme1_Click(object sender, EventArgs e)
@@ -49,19 +54,26 @@ namespace Project
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            string dummy = "r@mail.com";
-            
-            //SQL Query EG: SELECT FROM EMPLOYEE DATABASE, WHERE EMAIL CONTAINS THE TYPED EMAIL
-            if (inputTxt.Text == dummy)
-            {
-               employeePortal employeePortal = new employeePortal();
-               employeePortal.Show();
-            } else {
-                //ELSE IF
-                //NOT CONTAIN, THEN ERROR DIALOG
-                MessageBox.Show("Invalid email!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            string employeeEmail = inputTxt.Text;
+            Employee_Load(employeeEmail);
+        }
+
+        private void Employee_Load(string employeeEmail)
+        {
+            string query = @"SELECT EmployeeEmail 
+                             FROM Employees 
+                             WHERE EmployeeEmail = @EmployeeEmail";
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                    adapter.SelectCommand.Parameters.AddWithValue("@EmployeeEmail", employeeEmail);
+
+                }
+
             }
-            
         }
     }
-}
+            
+
+

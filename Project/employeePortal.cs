@@ -31,5 +31,11 @@ namespace Project
         {
             this.Close();
         }
+
+        private void btnRentals_Click(object sender, EventArgs e)
+        {
+            ManageRentals ManageRentals = new ManageRentals();
+            ManageRentals.Show();
+        }
     }
 }
