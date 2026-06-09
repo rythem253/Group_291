@@ -62,7 +62,7 @@
             lblSelect.Font = new Font("Microsoft Sans Serif", 22F);
             lblSelect.ForeColor = Color.FromArgb(250, 250, 250);
             lblSelect.LeftSideForeColor = Color.FromArgb(250, 250, 250);
-            lblSelect.Location = new Point(273, 112);
+            lblSelect.Location = new Point(266, 118);
             lblSelect.Name = "lblSelect";
             lblSelect.RightSideForeColor = Color.FromArgb(170, 171, 176);
             lblSelect.Side = ReaLTaiizor.Controls.NightHeaderLabel.PanelSide.LeftPanel;
@@ -100,7 +100,7 @@
             customerSelection.Lighting = false;
             customerSelection.LinearGradient_Background = false;
             customerSelection.LinearGradientPen = false;
-            customerSelection.Location = new Point(442, 204);
+            customerSelection.Location = new Point(302, 286);
             customerSelection.Name = "customerSelection";
             customerSelection.PenWidth = 15;
             customerSelection.Rounding = true;
@@ -141,7 +141,7 @@
             empSelection.Lighting = false;
             empSelection.LinearGradient_Background = false;
             empSelection.LinearGradientPen = false;
-            empSelection.Location = new Point(184, 204);
+            empSelection.Location = new Point(302, 204);
             empSelection.Name = "empSelection";
             empSelection.PenWidth = 15;
             empSelection.Rounding = true;

@@ -5,7 +5,12 @@ C:\Users\rythe\Downloads\291\Group_291\Project\bin\Debug\net8.0-windows\Project.
 C:\Users\rythe\Downloads\291\Group_291\Project\bin\Debug\net8.0-windows\Project.pdb
 C:\Users\rythe\Downloads\291\Group_291\Project\bin\Debug\net8.0-windows\ReaLTaiizor.dll
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.csproj.AssemblyReference.cache
+C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.Customer.resources
+C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.customerPortal.resources
+C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.Employee.resources
+C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.employeePortal.resources
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.Form1.resources
+C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.Properties.Resources.resources
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.csproj.GenerateResource.cache
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.AssemblyInfoInputs.cache
@@ -18,7 +23,3 @@ C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\refint\P
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.pdb
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.genruntimeconfig.cache
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\ref\Project.dll
-C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.Customer.resources
-C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.Employee.resources
-C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.Properties.Resources.resources
-C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.customerPortal.resources

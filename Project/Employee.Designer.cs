@@ -29,78 +29,80 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
-            skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
-            crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
-            pictureBox1 = new PictureBox();
-            submitBtn = new ReaLTaiizor.Controls.Button();
-            crownTextBox1 = new ReaLTaiizor.Controls.CrownTextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            lblEmail = new ReaLTaiizor.Controls.SkyLabel();
+            lblMessage = new ReaLTaiizor.Controls.CrownLabel();
+            picEmp = new PictureBox();
+            btnSubmit = new ReaLTaiizor.Controls.Button();
+            inputTxt = new ReaLTaiizor.Controls.CrownTextBox();
+            ((System.ComponentModel.ISupportInitialize)picEmp).BeginInit();
             SuspendLayout();
             // 
-            // skyLabel1
+            // lblEmail
             // 
-            skyLabel1.AutoSize = true;
-            skyLabel1.BackColor = Color.Transparent;
-            skyLabel1.Font = new Font("Verdana", 15F, FontStyle.Bold);
-            skyLabel1.ForeColor = Color.White;
-            skyLabel1.Location = new Point(222, 265);
-            skyLabel1.Name = "skyLabel1";
-            skyLabel1.Size = new Size(92, 31);
-            skyLabel1.TabIndex = 17;
-            skyLabel1.Text = "Email";
+            lblEmail.AutoSize = true;
+            lblEmail.BackColor = Color.Transparent;
+            lblEmail.Font = new Font("Verdana", 15F, FontStyle.Bold);
+            lblEmail.ForeColor = Color.White;
+            lblEmail.Location = new Point(222, 265);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(92, 31);
+            lblEmail.TabIndex = 17;
+            lblEmail.Text = "Email";
             // 
-            // crownLabel1
+            // lblMessage
             // 
-            crownLabel1.AutoSize = true;
-            crownLabel1.BackColor = Color.Transparent;
-            crownLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            crownLabel1.ForeColor = Color.Transparent;
-            crownLabel1.Location = new Point(248, 212);
-            crownLabel1.Name = "crownLabel1";
-            crownLabel1.Size = new Size(297, 28);
-            crownLabel1.TabIndex = 14;
-            crownLabel1.Text = "Welcome Back, Team Member";
+            lblMessage.AutoSize = true;
+            lblMessage.BackColor = Color.Transparent;
+            lblMessage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMessage.ForeColor = Color.Transparent;
+            lblMessage.Location = new Point(248, 212);
+            lblMessage.Name = "lblMessage";
+            lblMessage.Size = new Size(310, 28);
+            lblMessage.TabIndex = 14;
+            lblMessage.Text = "Welcome Back, Team Member !";
             // 
-            // pictureBox1
+            // picEmp
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(323, 69);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 117);
-            pictureBox1.TabIndex = 15;
-            pictureBox1.TabStop = false;
+            picEmp.BackColor = Color.Transparent;
+            picEmp.Image = (Image)resources.GetObject("picEmp.Image");
+            picEmp.Location = new Point(323, 79);
+            picEmp.Name = "picEmp";
+            picEmp.Size = new Size(150, 117);
+            picEmp.TabIndex = 15;
+            picEmp.TabStop = false;
             // 
-            // submitBtn
+            // btnSubmit
             // 
-            submitBtn.BackColor = Color.Transparent;
-            submitBtn.BorderColor = Color.White;
-            submitBtn.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            submitBtn.EnteredColor = Color.White;
-            submitBtn.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            submitBtn.Image = null;
-            submitBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            submitBtn.InactiveColor = Color.FromArgb(32, 34, 37);
-            submitBtn.Location = new Point(323, 321);
-            submitBtn.Margin = new Padding(5);
-            submitBtn.Name = "submitBtn";
-            submitBtn.PressedBorderColor = Color.FromArgb(165, 37, 37);
-            submitBtn.PressedColor = Color.FromArgb(165, 37, 37);
-            submitBtn.Size = new Size(150, 50);
-            submitBtn.TabIndex = 13;
-            submitBtn.Text = "Submit";
-            submitBtn.TextAlignment = StringAlignment.Center;
+            btnSubmit.BackColor = Color.Transparent;
+            btnSubmit.BorderColor = Color.White;
+            btnSubmit.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnSubmit.EnteredColor = Color.White;
+            btnSubmit.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSubmit.Image = null;
+            btnSubmit.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSubmit.InactiveColor = Color.FromArgb(32, 34, 37);
+            btnSubmit.Location = new Point(323, 321);
+            btnSubmit.Margin = new Padding(5);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            btnSubmit.PressedColor = Color.FromArgb(165, 37, 37);
+            btnSubmit.Size = new Size(150, 50);
+            btnSubmit.TabIndex = 13;
+            btnSubmit.Text = "Submit";
+            btnSubmit.TextAlignment = StringAlignment.Center;
+            btnSubmit.Click += btnSubmit_Click;
             // 
-            // crownTextBox1
+            // inputTxt
             // 
-            crownTextBox1.BackColor = Color.FromArgb(69, 73, 74);
-            crownTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            crownTextBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            crownTextBox1.ForeColor = Color.Silver;
-            crownTextBox1.Location = new Point(351, 266);
-            crownTextBox1.Name = "crownTextBox1";
-            crownTextBox1.Size = new Size(232, 30);
-            crownTextBox1.TabIndex = 12;
+            inputTxt.BackColor = Color.FromArgb(69, 73, 74);
+            inputTxt.BorderStyle = BorderStyle.FixedSingle;
+            inputTxt.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            inputTxt.ForeColor = Color.Silver;
+            inputTxt.Location = new Point(323, 266);
+            inputTxt.Name = "inputTxt";
+            inputTxt.Size = new Size(232, 30);
+            inputTxt.TabIndex = 12;
+            inputTxt.TextChanged += inputTxt_TextChanged;
             // 
             // Employee
             // 
@@ -108,27 +110,27 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 471);
-            Controls.Add(skyLabel1);
-            Controls.Add(crownLabel1);
-            Controls.Add(pictureBox1);
-            Controls.Add(submitBtn);
-            Controls.Add(crownTextBox1);
+            Controls.Add(lblEmail);
+            Controls.Add(lblMessage);
+            Controls.Add(picEmp);
+            Controls.Add(btnSubmit);
+            Controls.Add(inputTxt);
             FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(126, 50);
             Name = "Employee";
             Text = " ";
             TransparencyKey = Color.Fuchsia;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picEmp).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ReaLTaiizor.Controls.SkyLabel skyLabel1;
-        private ReaLTaiizor.Controls.CrownLabel crownLabel1;
-        private PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.Button submitBtn;
-        private ReaLTaiizor.Controls.CrownTextBox crownTextBox1;
+        private ReaLTaiizor.Controls.SkyLabel lblEmail;
+        private ReaLTaiizor.Controls.CrownLabel lblMessage;
+        private PictureBox picEmp;
+        private ReaLTaiizor.Controls.Button btnSubmit;
+        private ReaLTaiizor.Controls.CrownTextBox inputTxt;
     }
 }

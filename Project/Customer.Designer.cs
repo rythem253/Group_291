@@ -70,7 +70,7 @@
             submitBtn.Image = null;
             submitBtn.ImageAlign = ContentAlignment.MiddleLeft;
             submitBtn.InactiveColor = Color.FromArgb(32, 34, 37);
-            submitBtn.Location = new Point(352, 313);
+            submitBtn.Location = new Point(352, 332);
             submitBtn.Margin = new Padding(5);
             submitBtn.Name = "submitBtn";
             submitBtn.PressedBorderColor = Color.FromArgb(165, 37, 37);
@@ -86,7 +86,7 @@
             crownTextBox1.BorderStyle = BorderStyle.FixedSingle;
             crownTextBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             crownTextBox1.ForeColor = Color.Silver;
-            crownTextBox1.Location = new Point(384, 253);
+            crownTextBox1.Location = new Point(352, 259);
             crownTextBox1.Name = "crownTextBox1";
             crownTextBox1.Size = new Size(232, 30);
             crownTextBox1.TabIndex = 12;
@@ -95,9 +95,9 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(337, 62);
+            pictureBox1.Location = new Point(352, 63);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(165, 167);
+            pictureBox1.Size = new Size(155, 166);
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
