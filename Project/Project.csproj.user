@@ -19,5 +19,8 @@
     <Compile Update="ManageRentals.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MovieInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
