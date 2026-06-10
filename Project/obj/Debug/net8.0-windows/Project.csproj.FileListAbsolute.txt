@@ -65,3 +65,5 @@ C:\Users\rythe\Downloads\291\Group_291\Project\bin\Debug\net8.0-windows\runtimes
 C:\Users\rythe\Downloads\291\Group_291\Project\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\rythe\Downloads\291\Group_291\Project\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.ManageRentals.resources
+C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.MovieInventory.resources
+C:\Users\rythe\Downloads\291\Group_291\Project\obj\Debug\net8.0-windows\Project.MovieCasting.resources

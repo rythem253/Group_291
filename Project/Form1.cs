@@ -10,7 +10,7 @@ namespace Project
     {
 
         private string connectionString =
-@"Server=RYTHEM;Database=LibraryLabDB;Trusted_Connection=True;TrustServerCertificate=True;";
+@"Server=(localdb)\MSSQLLocalDB;Database=CMPT291_Team1_MovieRental;Trusted_Connection=True;TrustServerCertificate=True;";
         public Form1()
         {
             InitializeComponent();

@@ -145,7 +145,9 @@
             Controls.Add(crownMenuStrip1);
             MainMenuStrip = crownMenuStrip1;
             Name = "customerPortal";
+            ShowIcon = false;
             Text = "customerPortal";
+            TransparencyKey = Color.Fuchsia;
             crownMenuStrip1.ResumeLayout(false);
             crownMenuStrip1.PerformLayout();
             ResumeLayout(false);

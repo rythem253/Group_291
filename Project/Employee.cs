@@ -58,22 +58,29 @@ namespace Project
             Employee_Load(employeeEmail);
         }
 
+        //Copy new tables with Employee Email, since this table does not have it.
         private void Employee_Load(string employeeEmail)
         {
-            string query = @"SELECT EmployeeEmail 
-                             FROM Employees 
-                             WHERE EmployeeEmail = @EmployeeEmail";
+            string query = "SELECT * FROM Employee WHERE Email = @Email";
 
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
-                    adapter.SelectCommand.Parameters.AddWithValue("@EmployeeEmail", employeeEmail);
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                adapter.SelectCommand.Parameters.AddWithValue("@Email", employeeEmail);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
 
+                if (table.Rows.Count > 0) { 
+                    employeePortal EmployeePortal = new employeePortal(connectionString);
+                    EmployeePortal.Show();
                 }
-
+                else
+                {
+                    MessageBox.Show("Employee not found");
+                }
             }
         }
     }
-            
+} 
 
 

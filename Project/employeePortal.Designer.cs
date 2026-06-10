@@ -57,6 +57,7 @@
             btnManageCustomer.TabIndex = 0;
             btnManageCustomer.Text = "Manage Customers";
             btnManageCustomer.TextAlignment = StringAlignment.Center;
+            btnManageCustomer.Click += btnManageCustomer_Click;
             // 
             // btnInventory
             // 
@@ -96,6 +97,7 @@
             btnMovieCasting.TabIndex = 2;
             btnMovieCasting.Text = "Movie Casting";
             btnMovieCasting.TextAlignment = StringAlignment.Center;
+            btnMovieCasting.Click += btnMovieCasting_Click;
             // 
             // btnRentals
             // 

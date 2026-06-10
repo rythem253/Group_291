@@ -81,7 +81,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSalmon;
+            BackColor = Color.PeachPuff;
             ClientSize = new Size(800, 450);
             Controls.Add(skyLabel1);
             Controls.Add(dataGridView1);

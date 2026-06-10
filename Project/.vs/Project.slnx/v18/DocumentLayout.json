@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\movieinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:movieinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\employeeportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:employeeportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\managerentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:managerentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\employeeportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:employeeportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\managerentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:managerentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\moviecasting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:moviecasting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\moviecasting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:moviecasting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\employeeportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:employeeportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\customerportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:customerportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|c:\\users\\rythe\\downloads\\291\\group_291\\project\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{167854E8-7229-C63A-099E-C75E793CAF57}|Project.csproj|solutionrelative:customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,54 +47,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MovieInventory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\MovieInventory.cs",
-              "RelativeDocumentMoniker": "MovieInventory.cs",
-              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\MovieInventory.cs [Design]",
-              "RelativeToolTip": "MovieInventory.cs [Design]",
+              "Title": "employeePortal.cs",
+              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\employeePortal.cs",
+              "RelativeDocumentMoniker": "employeePortal.cs",
+              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\employeePortal.cs",
+              "RelativeToolTip": "employeePortal.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T20:16:11.682Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-06-10T23:17:10.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Employee.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Employee.cs",
-              "RelativeDocumentMoniker": "Employee.cs",
-              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Employee.cs [Design]",
-              "RelativeToolTip": "Employee.cs [Design]",
+              "Title": "MovieCasting.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\MovieCasting.cs",
+              "RelativeDocumentMoniker": "MovieCasting.cs",
+              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\MovieCasting.cs [Design]",
+              "RelativeToolTip": "MovieCasting.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T20:06:44.949Z",
+              "WhenOpened": "2026-06-10T23:37:25.775Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ManageRentals.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\ManageRentals.cs",
-              "RelativeDocumentMoniker": "ManageRentals.cs",
-              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\ManageRentals.cs [Design]",
-              "RelativeToolTip": "ManageRentals.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T19:58:39.926Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ManageRentals.cs",
               "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\ManageRentals.cs",
               "RelativeDocumentMoniker": "ManageRentals.cs",
               "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\ManageRentals.cs",
               "RelativeToolTip": "ManageRentals.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T20:05:05.078Z"
+              "WhenOpened": "2026-06-10T23:21:19.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee.cs",
+              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Employee.cs",
+              "RelativeToolTip": "Employee.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAQwD0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T23:16:13.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovieCasting.cs",
+              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\MovieCasting.cs",
+              "RelativeDocumentMoniker": "MovieCasting.cs",
+              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\MovieCasting.cs",
+              "RelativeToolTip": "MovieCasting.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T22:57:47.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "employeePortal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\employeePortal.cs",
               "RelativeDocumentMoniker": "employeePortal.cs",
@@ -118,61 +122,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Customer.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Customer.cs",
               "RelativeDocumentMoniker": "Customer.cs",
               "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Customer.cs [Design]",
               "RelativeToolTip": "Customer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T19:37:21.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "customerPortal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\customerPortal.cs",
-              "RelativeDocumentMoniker": "customerPortal.cs",
-              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\customerPortal.cs [Design]",
-              "RelativeToolTip": "customerPortal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T20:06:41.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwC4AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T19:19:57.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T04:43:28.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Customer.cs",
-              "RelativeDocumentMoniker": "Customer.cs",
-              "ToolTip": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Customer.cs",
-              "RelativeToolTip": "Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T19:37:23.701Z"
+              "WhenOpened": "2026-06-09T19:37:21.867Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

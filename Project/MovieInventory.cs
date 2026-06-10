@@ -16,5 +16,15 @@ namespace Project
         {
             InitializeComponent();
         }
+
+        private void skyLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonForm1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
