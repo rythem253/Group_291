@@ -12,9 +12,11 @@ namespace Project
 {
     public partial class employeePortal : Form
     {
-        public employeePortal()
+        private int _employeeId;
+        public employeePortal(int employeeId)
         {
             InitializeComponent();
+            _employeeId = employeeId;
         }
 
         private void button2_Click(object sender, EventArgs e)

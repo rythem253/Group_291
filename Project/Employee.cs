@@ -60,15 +60,36 @@ namespace Project
 
         private void Employee_Load(string employeeEmail)
         {
-            string query = @"SELECT EmployeeEmail 
-                             FROM Employees 
-                             WHERE EmployeeEmail = @EmployeeEmail";
+            string query = @"SELECT EID 
+                             FROM Employee 
+                             WHERE Email = @EmployeeEmail";
 
-                using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
-                    adapter.SelectCommand.Parameters.AddWithValue("@EmployeeEmail", employeeEmail);
-
+                    cmd.Parameters.AddWithValue("@EmployeeEmail", employeeEmail);
+                    try
+                    {
+                        conn.Open();
+                        object result = cmd.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            int employeeId = Convert.ToInt32(result);
+                            employeePortal employeePortal = new employeePortal(employeeId);
+                            employeePortal.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid email. Please try again.");
+                            return;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.Message);
+                    }
+                }
                 }
 
             }

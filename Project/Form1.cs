@@ -8,9 +8,9 @@ namespace Project
 {
     public partial class Form1 : Form
     {
-
+        // Server Connection string
         private string connectionString =
-@"Server=RYTHEM;Database=LibraryLabDB;Trusted_Connection=True;TrustServerCertificate=True;";
+@"Server=localhost;Database=CMPT291_Team1_MovieRental;Trusted_Connection=True;TrustServerCertificate=True;";
         public Form1()
         {
             InitializeComponent();
