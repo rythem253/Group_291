@@ -40,13 +40,25 @@ namespace Project
         private void Customer_Load(string customerName)
         {
 
-            string query = "SELECT * FROM Customers WHERE FName = @Name";
+            string query = "SELECT * FROM Customer WHERE FName = @Name";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 adapter.SelectCommand.Parameters.AddWithValue("@Name", customerName);
-                
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                if (table.Rows.Count > 0)
+                {
+                    customerPortal CustomerPortal = new customerPortal();
+                    CustomerPortal.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Customer not found.");
+                }
+
             }
         }
 

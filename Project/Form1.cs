@@ -9,12 +9,11 @@ namespace Project
     public partial class Form1 : Form
     {
         // Server Connection string
-        private string connectionString =
-@"Server=localhost;Database=CMPT291_Team1_MovieRental;Trusted_Connection=True;TrustServerCertificate=True;";
-        public Form1()
-        {
+        private string connectionString;
+        public Form1(string connString)
+        {   
             InitializeComponent();
-
+            connectionString = connString;
         }
 
         private void Form1_Load(object sender, EventArgs e)

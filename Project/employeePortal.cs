@@ -12,11 +12,12 @@ namespace Project
 {
     public partial class employeePortal : Form
     {
-        private int _employeeId;
-        public employeePortal(int employeeId)
+
+        private string connectionString;
+        public employeePortal(string connString)
         {
             InitializeComponent();
-            _employeeId = employeeId;
+            connectionString = connString;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -36,8 +37,19 @@ namespace Project
 
         private void btnRentals_Click(object sender, EventArgs e)
         {
-            ManageRentals ManageRentals = new ManageRentals();
+            ManageRentals ManageRentals = new ManageRentals(connectionString);
             ManageRentals.Show();
+        }
+
+        private void btnMovieCasting_Click(object sender, EventArgs e)
+        {
+            MovieCasting movieCasting = new MovieCasting(connectionString);
+            movieCasting.Show();
+        }
+
+        private void btnManageCustomer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

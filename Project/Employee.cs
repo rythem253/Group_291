@@ -58,43 +58,29 @@ namespace Project
             Employee_Load(employeeEmail);
         }
 
+        //Copy new tables with Employee Email, since this table does not have it.
         private void Employee_Load(string employeeEmail)
         {
-            string query = @"SELECT EID 
-                             FROM Employee 
-                             WHERE Email = @EmployeeEmail";
+            string query = "SELECT * FROM Employee WHERE Email = @Email";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@EmployeeEmail", employeeEmail);
-                    try
-                    {
-                        conn.Open();
-                        object result = cmd.ExecuteScalar();
-                        if (result != null && result != DBNull.Value)
-                        {
-                            int employeeId = Convert.ToInt32(result);
-                            employeePortal employeePortal = new employeePortal(employeeId);
-                            employeePortal.Show();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Invalid email. Please try again.");
-                            return;
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("An error occurred: " + ex.Message);
-                    }
-                }
-                }
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                adapter.SelectCommand.Parameters.AddWithValue("@Email", employeeEmail);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
 
+                if (table.Rows.Count > 0) { 
+                    employeePortal EmployeePortal = new employeePortal(connectionString);
+                    EmployeePortal.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Employee not found");
+                }
             }
         }
     }
-            
+} 
 
 

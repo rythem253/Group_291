@@ -14,11 +14,11 @@ namespace Project
     public partial class ManageRentals : Form
     {
         // Server Connection string
-        private string connectionString =
-            @"Server=localhost;Database=CMPT291_Team1_MovieRental;Trusted_Connection=True;TrustServerCertificate=True;";
-        public ManageRentals()
+        private string connectionString;
+        public ManageRentals(string connString)
         {
             InitializeComponent();
+            connectionString = connString;
         }
 
         // This method runs a SELECT query and displays the result in a DataGridView.
@@ -98,6 +98,13 @@ namespace Project
                 // This is helpful during development and demo testing.
                 MessageBox.Show("Database error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            AddNewRental addNew = new AddNewRental(connectionString);
+            addNew.Show();
+            this.Hide();
         }
     }
 }

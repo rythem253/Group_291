@@ -30,13 +30,13 @@
         {
             components = new System.ComponentModel.Container();
             btnManageCustomer = new ReaLTaiizor.Controls.Button();
-            btnInventory = new ReaLTaiizor.Controls.Button();
             btnMovieCasting = new ReaLTaiizor.Controls.Button();
             btnRentals = new ReaLTaiizor.Controls.Button();
             btnLogout = new ReaLTaiizor.Controls.AirButton();
             bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             imageList1 = new ImageList(components);
             skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
+            btnInventory = new ReaLTaiizor.Controls.Button();
             SuspendLayout();
             // 
             // btnManageCustomer
@@ -57,26 +57,7 @@
             btnManageCustomer.TabIndex = 0;
             btnManageCustomer.Text = "Manage Customers";
             btnManageCustomer.TextAlignment = StringAlignment.Center;
-            // 
-            // btnInventory
-            // 
-            btnInventory.BackColor = Color.Transparent;
-            btnInventory.BorderColor = Color.FromArgb(32, 34, 37);
-            btnInventory.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnInventory.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnInventory.Font = new Font("Microsoft Sans Serif", 12F);
-            btnInventory.Image = null;
-            btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInventory.InactiveColor = SystemColors.ControlDarkDark;
-            btnInventory.Location = new Point(315, 299);
-            btnInventory.Name = "btnInventory";
-            btnInventory.PressedBorderColor = Color.Black;
-            btnInventory.PressedColor = Color.FromArgb(165, 37, 37);
-            btnInventory.Size = new Size(230, 50);
-            btnInventory.TabIndex = 1;
-            btnInventory.Text = "Manage Movie Inventory";
-            btnInventory.TextAlignment = StringAlignment.Center;
-            btnInventory.Click += button2_Click;
+            btnManageCustomer.Click += btnManageCustomer_Click;
             // 
             // btnMovieCasting
             // 
@@ -96,6 +77,7 @@
             btnMovieCasting.TabIndex = 2;
             btnMovieCasting.Text = "Movie Casting";
             btnMovieCasting.TextAlignment = StringAlignment.Center;
+            btnMovieCasting.Click += btnMovieCasting_Click;
             // 
             // btnRentals
             // 
@@ -161,6 +143,26 @@
             skyLabel1.Text = "Employee Portal";
             skyLabel1.TextAlign = ContentAlignment.TopCenter;
             // 
+            // btnInventory
+            // 
+            btnInventory.BackColor = Color.Transparent;
+            btnInventory.BorderColor = Color.FromArgb(32, 34, 37);
+            btnInventory.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnInventory.EnteredColor = Color.FromArgb(32, 34, 37);
+            btnInventory.Font = new Font("Microsoft Sans Serif", 12F);
+            btnInventory.Image = null;
+            btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInventory.InactiveColor = SystemColors.ControlDarkDark;
+            btnInventory.Location = new Point(315, 299);
+            btnInventory.Name = "btnInventory";
+            btnInventory.PressedBorderColor = Color.Black;
+            btnInventory.PressedColor = Color.FromArgb(165, 37, 37);
+            btnInventory.Size = new Size(230, 50);
+            btnInventory.TabIndex = 1;
+            btnInventory.Text = "Manage Movie Inventory";
+            btnInventory.TextAlignment = StringAlignment.Center;
+            btnInventory.Click += button2_Click;
+            // 
             // employeePortal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -183,12 +185,12 @@
         #endregion
 
         private ReaLTaiizor.Controls.Button btnManageCustomer;
-        private ReaLTaiizor.Controls.Button btnInventory;
         private ReaLTaiizor.Controls.Button btnMovieCasting;
         private ReaLTaiizor.Controls.Button btnRentals;
         private ReaLTaiizor.Controls.AirButton btnLogout;
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private ImageList imageList1;
         private ReaLTaiizor.Controls.SkyLabel skyLabel1;
+        private ReaLTaiizor.Controls.Button btnInventory;
     }
 }
