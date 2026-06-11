@@ -34,6 +34,7 @@ namespace Project
         FROM Movies
         JOIN Features ON Features.MovieID = Movies.MovieID
         JOIN Actor ON Actor.AID = Features.AID
+
         ORDER BY Movies.Title ASC;";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -47,5 +48,36 @@ namespace Project
             }
         }
 
+        private void filterBtn_Click(object sender, EventArgs e)
+        {
+            string filterText = filterTxt.Text;
+
+            if (string.IsNullOrEmpty(filterText))
+            {
+                LoadCasting();
+                return;
+            }
+
+            string query = @"
+                        SELECT Movies.Title, Actor.FName
+                        FROM Movies
+                        JOIN Features ON Features.MovieID = Movies.MovieID
+                        JOIN Actor ON Actor.AID = Features.AID
+                        WHERE Movies.Title LIKE @filterText + '%'
+                        ORDER BY Movies.Title ASC;";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@filterText", filterText);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                dgvLoadCasting.DataSource = table;
+            }
+        }
     }
 }

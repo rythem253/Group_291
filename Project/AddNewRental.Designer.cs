@@ -41,6 +41,9 @@
             label6 = new Label();
             submitBtn = new ReaLTaiizor.Controls.AirButton();
             label7 = new Label();
+            radioButton1 = new ReaLTaiizor.Controls.RadioButton();
+            radioButton2 = new ReaLTaiizor.Controls.RadioButton();
+            radioButton3 = new ReaLTaiizor.Controls.RadioButton();
             SuspendLayout();
             // 
             // eidTxt
@@ -56,6 +59,7 @@
             checkoutTxt.Name = "checkoutTxt";
             checkoutTxt.Size = new Size(125, 27);
             checkoutTxt.TabIndex = 1;
+            checkoutTxt.TextChanged += checkoutTxt_TextChanged;
             // 
             // movieNameTxt
             // 
@@ -162,12 +166,54 @@
             label7.TabIndex = 11;
             label7.Text = "PlaceHolder";
             // 
+            // radioButton1
+            // 
+            radioButton1.Checked = false;
+            radioButton1.CheckedColor = Color.FromArgb(32, 34, 37);
+            radioButton1.CircleColor = Color.FromArgb(66, 76, 85);
+            radioButton1.ForeColor = Color.Black;
+            radioButton1.Location = new Point(601, 253);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(150, 17);
+            radioButton1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            radioButton1.TabIndex = 12;
+            radioButton1.Text = "3 Days";
+            // 
+            // radioButton2
+            // 
+            radioButton2.Checked = false;
+            radioButton2.CheckedColor = Color.FromArgb(32, 34, 37);
+            radioButton2.CircleColor = Color.FromArgb(66, 76, 85);
+            radioButton2.ForeColor = Color.Black;
+            radioButton2.Location = new Point(601, 276);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(150, 17);
+            radioButton2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            radioButton2.TabIndex = 13;
+            radioButton2.Text = "5 Days";
+            // 
+            // radioButton3
+            // 
+            radioButton3.Checked = false;
+            radioButton3.CheckedColor = Color.FromArgb(32, 34, 37);
+            radioButton3.CircleColor = Color.FromArgb(66, 76, 85);
+            radioButton3.ForeColor = Color.Black;
+            radioButton3.Location = new Point(601, 299);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(150, 17);
+            radioButton3.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            radioButton3.TabIndex = 14;
+            radioButton3.Text = "7 Days";
+            // 
             // AddNewRental
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PeachPuff;
             ClientSize = new Size(800, 450);
+            Controls.Add(radioButton3);
+            Controls.Add(radioButton2);
+            Controls.Add(radioButton1);
             Controls.Add(label7);
             Controls.Add(submitBtn);
             Controls.Add(label6);
@@ -202,5 +248,8 @@
         private Label label6;
         private ReaLTaiizor.Controls.AirButton submitBtn;
         private Label label7;
+        private ReaLTaiizor.Controls.RadioButton radioButton1;
+        private ReaLTaiizor.Controls.RadioButton radioButton2;
+        private ReaLTaiizor.Controls.RadioButton radioButton3;
     }
 }

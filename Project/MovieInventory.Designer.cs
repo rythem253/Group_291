@@ -35,10 +35,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(179, 90);
+            dataGridView1.Location = new Point(179, 201);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(452, 330);
+            dataGridView1.Size = new Size(452, 219);
             dataGridView1.TabIndex = 0;
             // 
             // MovieInventory
