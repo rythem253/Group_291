@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class MovieInventory
+    partial class ManageCustomer
     {
         /// <summary>
         /// Required designer variable.
@@ -35,20 +35,20 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(179, 90);
+            dataGridView1.Location = new Point(197, 157);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(452, 330);
+            dataGridView1.Size = new Size(300, 188);
             dataGridView1.TabIndex = 0;
             // 
-            // MovieInventory
+            // ManageCustomer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
-            Name = "MovieInventory";
-            Text = "MovieInventory";
+            Name = "ManageCustomer";
+            Text = "ManageCustomer";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

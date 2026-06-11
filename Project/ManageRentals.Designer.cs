@@ -32,6 +32,7 @@
             label1 = new Label();
             dataGridView1 = new DataGridView();
             skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
+            addBtn = new ReaLTaiizor.Controls.AirButton();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -39,7 +40,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Returned", "In-use", "Late" });
-            comboBox1.Location = new Point(387, 80);
+            comboBox1.Location = new Point(414, 101);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(160, 28);
             comboBox1.TabIndex = 0;
@@ -49,7 +50,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(241, 80);
+            label1.Location = new Point(281, 101);
             label1.Name = "label1";
             label1.Size = new Size(127, 28);
             label1.TabIndex = 1;
@@ -58,7 +59,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(87, 159);
+            dataGridView1.Location = new Point(88, 207);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(646, 222);
@@ -77,12 +78,27 @@
             skyLabel1.Text = "Manage Rentals";
             skyLabel1.Click += skyLabel1_Click;
             // 
+            // addBtn
+            // 
+            addBtn.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            addBtn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addBtn.Image = null;
+            addBtn.Location = new Point(414, 145);
+            addBtn.Name = "addBtn";
+            addBtn.NoRounding = false;
+            addBtn.Size = new Size(160, 56);
+            addBtn.TabIndex = 4;
+            addBtn.Text = "Add New Rental";
+            addBtn.Transparent = false;
+            addBtn.Click += addBtn_Click;
+            // 
             // ManageRentals
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PeachPuff;
             ClientSize = new Size(800, 450);
+            Controls.Add(addBtn);
             Controls.Add(skyLabel1);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
@@ -101,5 +117,6 @@
         private Label label1;
         private DataGridView dataGridView1;
         private ReaLTaiizor.Controls.SkyLabel skyLabel1;
+        private ReaLTaiizor.Controls.AirButton addBtn;
     }
 }

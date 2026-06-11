@@ -12,9 +12,11 @@ namespace Project
 {
     public partial class ManageRentals : Form
     {
-        public ManageRentals()
+        private string connectionString;
+        public ManageRentals(string connString)
         {
             InitializeComponent();
+            connectionString = connString;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -35,6 +37,13 @@ namespace Project
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //SQL Query for each option.
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            AddNewRental addNew = new AddNewRental(connectionString);
+            addNew.Show();
+            this.Hide();
         }
     }
 }

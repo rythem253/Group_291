@@ -37,7 +37,7 @@ namespace Project
 
         private void btnRentals_Click(object sender, EventArgs e)
         {
-            ManageRentals ManageRentals = new ManageRentals();
+            ManageRentals ManageRentals = new ManageRentals(connectionString);
             ManageRentals.Show();
         }
 

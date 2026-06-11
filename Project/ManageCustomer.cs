@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class MovieInventory : Form
+    public partial class ManageCustomer : Form
     {
-        public MovieInventory()
+        public ManageCustomer()
         {
             InitializeComponent();
         }
