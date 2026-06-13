@@ -33,20 +33,45 @@ namespace Project
 
         private void submitBtn_Click(object sender, EventArgs e)
         {  
-            string customerName = inputTxtCust.Text;
-            Customer_Load(customerName);
+            string customerEmail = inputTxtCust.Text;
+            Customer_Load(customerEmail);
         }
 
-        private void Customer_Load(string customerName)
+        private void Customer_Load(string customerEmail)
         {
 
-            string query = "SELECT * FROM Customers WHERE FName = @Name";
+            string query = "SELECT CID FROM Customer WHERE Email = @email";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
-                adapter.SelectCommand.Parameters.AddWithValue("@Name", customerName);
-                
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@email", customerEmail);
+
+                    try
+                    {
+                        conn.Open();
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null && result != DBNull.Value)
+                        {
+                            int customerId = Convert.ToInt32(result);
+
+                            customerPortal portal = new customerPortal(connectionString,customerId);
+                            portal.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Customer email not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Database error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
         }
 

@@ -1250,24 +1250,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rythe\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Mitch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Project.csproj",
+      "projectUniqueName": "C:\\Users\\Mitch\\source\\repos\\Group_291\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\Project.csproj",
-      "packagesPath": "C:\\Users\\rythe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rythe\\Downloads\\291\\Group_291\\Project\\obj\\",
+      "projectPath": "C:\\Users\\Mitch\\source\\repos\\Group_291\\Project\\Project.csproj",
+      "packagesPath": "C:\\Users\\Mitch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mitch\\source\\repos\\Group_291\\Project\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\rythe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Mitch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1321,6 +1316,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.28, 8.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-arm64",
+            "version": "[8.0.28, 8.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.28, 8.0.28]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.28, 8.0.28]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -1329,7 +1342,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
