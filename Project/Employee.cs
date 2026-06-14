@@ -15,10 +15,18 @@ namespace Project
     {
 
         private string connectionString;
+        private Form1 parent;
 
-        public Employee(string connString)
+        public Employee(string connString, Form1 login)
         {
+            if (Main.mainPanel == null)
+            {
+                this.Close();
+                throw new NullReferenceException(
+                    "No panel to display");
+            }
             InitializeComponent();
+            this.parent = login;
             connectionString = connString;
         }
 
@@ -70,7 +78,8 @@ namespace Project
                 DataTable table = new DataTable();
                 adapter.Fill(table);
 
-                if (table.Rows.Count > 0) { 
+                if (table.Rows.Count > 0)
+                {
                     employeePortal EmployeePortal = new employeePortal(connectionString);
                     EmployeePortal.Show();
                 }
@@ -79,6 +88,13 @@ namespace Project
                     MessageBox.Show("Employee not found");
                 }
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Main.mainPanel.Controls.Clear();
+            Main.mainPanel.Controls.Add(parent);
+            this.Close();
         }
     }
 } 

@@ -70,7 +70,7 @@ namespace Project
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string sql = @"Select R.RentID, R.CID, C.FName + ' ' + C.LName AS CustomerName, R.MovieID, R.CheckoutDate, R.ReturnDate, R.[Status]
+            string sql = @"Select R.RentID, R.CID, C.FName + ' ' + C.LName AS CustomerName, R.CheckoutDate, R.ReturnDate, R.[Status]
                            FROM Rental AS R JOIN Customer AS C ON R.CID = C.CID 
                            WHERE [Status] = @Status";
             try

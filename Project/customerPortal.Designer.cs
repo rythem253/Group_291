@@ -59,7 +59,7 @@
             crownMenuStrip1.Location = new Point(0, 0);
             crownMenuStrip1.Name = "crownMenuStrip1";
             crownMenuStrip1.Padding = new Padding(3, 2, 0, 2);
-            crownMenuStrip1.Size = new Size(800, 28);
+            crownMenuStrip1.Size = new Size(925, 28);
             crownMenuStrip1.TabIndex = 1;
             crownMenuStrip1.Text = "crownMenuStrip1";
             // 
@@ -77,7 +77,7 @@
             hitsToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             hitsToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             hitsToolStripMenuItem.Name = "hitsToolStripMenuItem";
-            hitsToolStripMenuItem.Size = new Size(145, 26);
+            hitsToolStripMenuItem.Size = new Size(224, 26);
             hitsToolStripMenuItem.Text = "Hits";
             // 
             // cartoonToolStripMenuItem
@@ -85,7 +85,7 @@
             cartoonToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cartoonToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cartoonToolStripMenuItem.Name = "cartoonToolStripMenuItem";
-            cartoonToolStripMenuItem.Size = new Size(145, 26);
+            cartoonToolStripMenuItem.Size = new Size(224, 26);
             cartoonToolStripMenuItem.Text = "Cartoon";
             // 
             // sadToolStripMenuItem
@@ -93,7 +93,7 @@
             sadToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             sadToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             sadToolStripMenuItem.Name = "sadToolStripMenuItem";
-            sadToolStripMenuItem.Size = new Size(145, 26);
+            sadToolStripMenuItem.Size = new Size(224, 26);
             sadToolStripMenuItem.Text = "Sad";
             // 
             // onHoldToolStripMenuItem
@@ -118,7 +118,7 @@
             overdueToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             overdueToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             overdueToolStripMenuItem.Name = "overdueToolStripMenuItem";
-            overdueToolStripMenuItem.Size = new Size(202, 26);
+            overdueToolStripMenuItem.Size = new Size(224, 26);
             overdueToolStripMenuItem.Text = "Overdue";
             // 
             // accountBalanceToolStripMenuItem
@@ -126,7 +126,7 @@
             accountBalanceToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             accountBalanceToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             accountBalanceToolStripMenuItem.Name = "accountBalanceToolStripMenuItem";
-            accountBalanceToolStripMenuItem.Size = new Size(202, 26);
+            accountBalanceToolStripMenuItem.Size = new Size(224, 26);
             accountBalanceToolStripMenuItem.Text = "Account Balance";
             // 
             // accountInformationToolStripMenuItem
@@ -141,7 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(925, 444);
             Controls.Add(crownMenuStrip1);
             MainMenuStrip = crownMenuStrip1;
             Name = "customerPortal";

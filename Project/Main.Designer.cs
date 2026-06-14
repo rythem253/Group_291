@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    partial class MovieInventory
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panView = new Panel();
             SuspendLayout();
             // 
-            // dataGridView1
+            // panView
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(179, 201);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(452, 219);
-            dataGridView1.TabIndex = 0;
+            panView.Dock = DockStyle.Fill;
+            panView.Location = new Point(0, 0);
+            panView.Name = "panView";
+            panView.Size = new Size(1022, 695);
+            panView.TabIndex = 0;
             // 
-            // MovieInventory
+            // Main
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
-            Name = "MovieInventory";
-            Text = "MovieInventory";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ClientSize = new Size(1022, 695);
+            Controls.Add(panView);
+            Name = "Main";
+            Text = "Login Dashboard";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private Panel panView;
     }
 }

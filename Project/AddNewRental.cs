@@ -61,7 +61,7 @@ namespace Project
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmdCount = new SqlCommand(findRentNum, conn))
             using (SqlCommand cmd = new SqlCommand(insertRental, conn))
-            using (SqlCommand cmdMovieID = new SqlCommand(findMovieID, conn)) 
+            using (SqlCommand cmdMovieID = new SqlCommand(findMovieID, conn))
             using (SqlCommand cmd2 = new SqlCommand(insertRented, conn))
             {
                 try
@@ -96,7 +96,7 @@ namespace Project
 
                     cmd.ExecuteNonQuery();
                     cmd2.ExecuteNonQuery();
-                   
+
 
                     MessageBox.Show("Inserted successfully!");
                 }
@@ -105,6 +105,11 @@ namespace Project
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+        }
+
+        private void checkoutTxt_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
