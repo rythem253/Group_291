@@ -15,10 +15,18 @@ namespace Project
     public partial class Customer : Form
     {
         private string connectionString;
+        private Form1 parent;
 
-        public Customer(string connString)
+        public Customer(string connString, Form1 login)
         {
+            if (Main.mainPanel == null)
+            {
+                this.Close();
+                throw new NullReferenceException(
+                    "No panel to display");
+            }
             InitializeComponent();
+            this.parent = login;
             connectionString = connString;
         }
 
@@ -32,7 +40,7 @@ namespace Project
         }
 
         private void submitBtn_Click(object sender, EventArgs e)
-        {  
+        {
             string customerName = inputTxtCust.Text;
             Customer_Load(customerName);
         }
@@ -40,7 +48,7 @@ namespace Project
         private void Customer_Load(string customerName)
         {
 
-            string query = "SELECT * FROM Customer WHERE FName = @Name";
+            string query = "SELECT * FROM Customer WHERE Email = @Name";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -65,6 +73,22 @@ namespace Project
         private void inputTxtCust_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void airButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (parent == null)
+            {
+                parent = new Form1() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            }
+            Main.mainPanel.Controls.Clear();
+            Main.mainPanel.Controls.Add(parent);
+            this.Close();
         }
     }
 }

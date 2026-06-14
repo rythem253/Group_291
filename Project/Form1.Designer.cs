@@ -32,6 +32,8 @@
             customerSelection = new ReaLTaiizor.Controls.CyberButton();
             lblSelect = new ReaLTaiizor.Controls.NightHeaderLabel();
             SelectionScreen = new ReaLTaiizor.Forms.FormTheme();
+            foreverMinimize1 = new ReaLTaiizor.Controls.ForeverMinimize();
+            foreverClose1 = new ReaLTaiizor.Controls.ForeverClose();
             SelectionScreen.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,12 +63,13 @@
             empSelection.Lighting = false;
             empSelection.LinearGradient_Background = false;
             empSelection.LinearGradientPen = false;
-            empSelection.Location = new Point(302, 204);
+            empSelection.Location = new Point(378, 255);
+            empSelection.Margin = new Padding(4);
             empSelection.Name = "empSelection";
             empSelection.PenWidth = 15;
             empSelection.Rounding = true;
             empSelection.RoundingInt = 70;
-            empSelection.Size = new Size(162, 62);
+            empSelection.Size = new Size(202, 78);
             empSelection.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             empSelection.TabIndex = 4;
             empSelection.Tag = "Cyber";
@@ -102,12 +105,13 @@
             customerSelection.Lighting = false;
             customerSelection.LinearGradient_Background = false;
             customerSelection.LinearGradientPen = false;
-            customerSelection.Location = new Point(302, 286);
+            customerSelection.Location = new Point(378, 358);
+            customerSelection.Margin = new Padding(4);
             customerSelection.Name = "customerSelection";
             customerSelection.PenWidth = 15;
             customerSelection.Rounding = true;
             customerSelection.RoundingInt = 70;
-            customerSelection.Size = new Size(162, 62);
+            customerSelection.Size = new Size(202, 78);
             customerSelection.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             customerSelection.TabIndex = 5;
             customerSelection.Tag = "Cyber";
@@ -124,45 +128,80 @@
             lblSelect.Font = new Font("Microsoft Sans Serif", 22F);
             lblSelect.ForeColor = Color.FromArgb(250, 250, 250);
             lblSelect.LeftSideForeColor = Color.FromArgb(250, 250, 250);
-            lblSelect.Location = new Point(266, 118);
+            lblSelect.Location = new Point(332, 148);
+            lblSelect.Margin = new Padding(4, 0, 4, 0);
             lblSelect.Name = "lblSelect";
             lblSelect.RightSideForeColor = Color.FromArgb(170, 171, 176);
             lblSelect.Side = ReaLTaiizor.Controls.NightHeaderLabel.PanelSide.LeftPanel;
-            lblSelect.Size = new Size(248, 50);
+            lblSelect.Size = new Size(297, 59);
             lblSelect.TabIndex = 7;
             lblSelect.Text = "Please select:";
             lblSelect.TextAlign = ContentAlignment.MiddleCenter;
             lblSelect.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             lblSelect.UseCompatibleTextRendering = true;
-            lblSelect.Click += lblSelect_Click;
             // 
             // SelectionScreen
             // 
             SelectionScreen.BackColor = Color.PeachPuff;
+            SelectionScreen.Controls.Add(foreverMinimize1);
             SelectionScreen.Controls.Add(lblSelect);
+            SelectionScreen.Controls.Add(foreverClose1);
             SelectionScreen.Controls.Add(customerSelection);
             SelectionScreen.Controls.Add(empSelection);
             SelectionScreen.Dock = DockStyle.Fill;
             SelectionScreen.Font = new Font("Segoe UI", 8F);
             SelectionScreen.ForeColor = Color.White;
             SelectionScreen.Location = new Point(0, 0);
+            SelectionScreen.Margin = new Padding(4);
             SelectionScreen.Name = "SelectionScreen";
-            SelectionScreen.Padding = new Padding(3, 28, 3, 28);
+            SelectionScreen.Padding = new Padding(4, 35, 4, 35);
             SelectionScreen.Sizable = true;
-            SelectionScreen.Size = new Size(775, 505);
+            SelectionScreen.Size = new Size(969, 631);
             SelectionScreen.SmartBounds = false;
             SelectionScreen.StartPosition = FormStartPosition.WindowsDefaultLocation;
             SelectionScreen.TabIndex = 0;
             SelectionScreen.Text = " ";
-            SelectionScreen.Click += SelectionScreen_Click;
+            // 
+            // foreverMinimize1
+            // 
+            foreverMinimize1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            foreverMinimize1.BackColor = Color.White;
+            foreverMinimize1.BaseColor = Color.FromArgb(45, 47, 49);
+            foreverMinimize1.DefaultLocation = true;
+            foreverMinimize1.DownColor = Color.FromArgb(30, 0, 0, 0);
+            foreverMinimize1.Font = new Font("Marlett", 12F);
+            foreverMinimize1.Location = new Point(891, 12);
+            foreverMinimize1.Name = "foreverMinimize1";
+            foreverMinimize1.OverColor = Color.FromArgb(30, 255, 255, 255);
+            foreverMinimize1.Size = new Size(18, 18);
+            foreverMinimize1.TabIndex = 11;
+            foreverMinimize1.Text = "foreverMinimize1";
+            foreverMinimize1.TextColor = Color.FromArgb(243, 243, 243);
+            // 
+            // foreverClose1
+            // 
+            foreverClose1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            foreverClose1.BackColor = Color.White;
+            foreverClose1.BaseColor = Color.FromArgb(45, 47, 49);
+            foreverClose1.DefaultLocation = true;
+            foreverClose1.DownColor = Color.FromArgb(30, 0, 0, 0);
+            foreverClose1.Font = new Font("Marlett", 10F);
+            foreverClose1.Location = new Point(939, 12);
+            foreverClose1.Name = "foreverClose1";
+            foreverClose1.OverColor = Color.FromArgb(30, 255, 255, 255);
+            foreverClose1.Size = new Size(18, 18);
+            foreverClose1.TabIndex = 10;
+            foreverClose1.Text = "foreverClose1";
+            foreverClose1.TextColor = Color.FromArgb(243, 243, 243);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(775, 505);
+            ClientSize = new Size(969, 631);
             Controls.Add(SelectionScreen);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             MinimumSize = new Size(126, 50);
             Name = "Form1";
             Text = " ";
@@ -179,5 +218,7 @@
         private ReaLTaiizor.Controls.CyberButton customerSelection;
         private ReaLTaiizor.Controls.NightHeaderLabel lblSelect;
         private ReaLTaiizor.Forms.FormTheme SelectionScreen;
+        private ReaLTaiizor.Controls.ForeverMinimize foreverMinimize1;
+        private ReaLTaiizor.Controls.ForeverClose foreverClose1;
     }
 }
