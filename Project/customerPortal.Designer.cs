@@ -64,9 +64,9 @@
             lblLastName = new Label();
             lblFirstName = new Label();
             panelMainContainer = new Panel();
-            panelAllMovies = new Panel();
             panelRentalRecords = new Panel();
             dgvRentalRecords = new DataGridView();
+            panelAllMovies = new Panel();
             btnSearchMovies = new ReaLTaiizor.Controls.CyberButton();
             txtSearchAllMovies = new ReaLTaiizor.Controls.CyberTextBox();
             cmbSearchCriteria = new ComboBox();
@@ -83,9 +83,9 @@
             ((System.ComponentModel.ISupportInitialize)dgvOnHold).BeginInit();
             panelAccount.SuspendLayout();
             panelMainContainer.SuspendLayout();
-            panelAllMovies.SuspendLayout();
             panelRentalRecords.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvRentalRecords).BeginInit();
+            panelAllMovies.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvAllMovies).BeginInit();
             panelWelcome.SuspendLayout();
             panelWatchList.SuspendLayout();
@@ -108,8 +108,8 @@
             crownMenuStrip1.Items.AddRange(new ToolStripItem[] { viewAllMoviesToolStripMenuItem, newReleaseToolStripMenuItem, watchListToolStripMenuItem, onHoldToolStripMenuItem, rentalsToolStripMenuItem, accountInformationToolStripMenuItem });
             crownMenuStrip1.Location = new Point(0, 0);
             crownMenuStrip1.Name = "crownMenuStrip1";
-            crownMenuStrip1.Padding = new Padding(3, 2, 0, 2);
-            crownMenuStrip1.Size = new Size(700, 24);
+            crownMenuStrip1.Padding = new Padding(4, 3, 0, 3);
+            crownMenuStrip1.Size = new Size(1000, 35);
             crownMenuStrip1.TabIndex = 1;
             crownMenuStrip1.Text = "crownMenuStrip1";
             // 
@@ -118,7 +118,7 @@
             viewAllMoviesToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             viewAllMoviesToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             viewAllMoviesToolStripMenuItem.Name = "viewAllMoviesToolStripMenuItem";
-            viewAllMoviesToolStripMenuItem.Size = new Size(102, 20);
+            viewAllMoviesToolStripMenuItem.Size = new Size(152, 29);
             viewAllMoviesToolStripMenuItem.Text = "View All Movies";
             viewAllMoviesToolStripMenuItem.Click += viewAllMoviesToolStripMenuItem_Click;
             // 
@@ -127,7 +127,7 @@
             newReleaseToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             newReleaseToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             newReleaseToolStripMenuItem.Name = "newReleaseToolStripMenuItem";
-            newReleaseToolStripMenuItem.Size = new Size(124, 20);
+            newReleaseToolStripMenuItem.Size = new Size(185, 29);
             newReleaseToolStripMenuItem.Text = "New Release Genres";
             // 
             // watchListToolStripMenuItem
@@ -135,7 +135,7 @@
             watchListToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             watchListToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             watchListToolStripMenuItem.Name = "watchListToolStripMenuItem";
-            watchListToolStripMenuItem.Size = new Size(71, 20);
+            watchListToolStripMenuItem.Size = new Size(103, 29);
             watchListToolStripMenuItem.Text = "WatchList";
             watchListToolStripMenuItem.Click += watchListToolStripMenuItem_Click;
             // 
@@ -144,7 +144,7 @@
             onHoldToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             onHoldToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             onHoldToolStripMenuItem.Name = "onHoldToolStripMenuItem";
-            onHoldToolStripMenuItem.Size = new Size(64, 20);
+            onHoldToolStripMenuItem.Size = new Size(96, 29);
             onHoldToolStripMenuItem.Text = "On Hold";
             onHoldToolStripMenuItem.Click += onHoldToolStripMenuItem_Click;
             // 
@@ -154,7 +154,7 @@
             rentalsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { rentalsCurrentToolStripMenuItem, rentalsPastToolStripMenuItem });
             rentalsToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             rentalsToolStripMenuItem.Name = "rentalsToolStripMenuItem";
-            rentalsToolStripMenuItem.Size = new Size(57, 20);
+            rentalsToolStripMenuItem.Size = new Size(84, 29);
             rentalsToolStripMenuItem.Text = "Rentals";
             // 
             // rentalsCurrentToolStripMenuItem
@@ -162,7 +162,7 @@
             rentalsCurrentToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             rentalsCurrentToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             rentalsCurrentToolStripMenuItem.Name = "rentalsCurrentToolStripMenuItem";
-            rentalsCurrentToolStripMenuItem.Size = new Size(137, 22);
+            rentalsCurrentToolStripMenuItem.Size = new Size(207, 34);
             rentalsCurrentToolStripMenuItem.Text = "Current";
             rentalsCurrentToolStripMenuItem.Click += rentalsCurrentToolStripMenuItem_Click;
             // 
@@ -171,7 +171,7 @@
             rentalsPastToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             rentalsPastToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             rentalsPastToolStripMenuItem.Name = "rentalsPastToolStripMenuItem";
-            rentalsPastToolStripMenuItem.Size = new Size(137, 22);
+            rentalsPastToolStripMenuItem.Size = new Size(207, 34);
             rentalsPastToolStripMenuItem.Text = "Past Rentals";
             rentalsPastToolStripMenuItem.Click += rentalsPastToolStripMenuItem_Click;
             // 
@@ -180,7 +180,7 @@
             accountInformationToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             accountInformationToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             accountInformationToolStripMenuItem.Name = "accountInformationToolStripMenuItem";
-            accountInformationToolStripMenuItem.Size = new Size(130, 20);
+            accountInformationToolStripMenuItem.Size = new Size(192, 29);
             accountInformationToolStripMenuItem.Text = "Account Information";
             // 
             // panelNewReleases
@@ -190,8 +190,9 @@
             panelNewReleases.Controls.Add(dgvNewReleases);
             panelNewReleases.Dock = DockStyle.Fill;
             panelNewReleases.Location = new Point(0, 0);
+            panelNewReleases.Margin = new Padding(4, 5, 4, 5);
             panelNewReleases.Name = "panelNewReleases";
-            panelNewReleases.Size = new Size(700, 348);
+            panelNewReleases.Size = new Size(1000, 580);
             panelNewReleases.TabIndex = 2;
             // 
             // btnAddToWatchList
@@ -221,11 +222,12 @@
             btnAddToWatchList.LinearGradient_Background = false;
             btnAddToWatchList.LinearGradientPen = false;
             btnAddToWatchList.Location = new Point(0, 0);
+            btnAddToWatchList.Margin = new Padding(4, 5, 4, 5);
             btnAddToWatchList.Name = "btnAddToWatchList";
             btnAddToWatchList.PenWidth = 15;
             btnAddToWatchList.Rounding = true;
             btnAddToWatchList.RoundingInt = 70;
-            btnAddToWatchList.Size = new Size(130, 50);
+            btnAddToWatchList.Size = new Size(186, 83);
             btnAddToWatchList.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnAddToWatchList.TabIndex = 0;
             btnAddToWatchList.Tag = "Cyber";
@@ -237,9 +239,10 @@
             // lblSelectedMovieTitle
             // 
             lblSelectedMovieTitle.AutoSize = true;
-            lblSelectedMovieTitle.Location = new Point(265, 313);
+            lblSelectedMovieTitle.Location = new Point(379, 522);
+            lblSelectedMovieTitle.Margin = new Padding(4, 0, 4, 0);
             lblSelectedMovieTitle.Name = "lblSelectedMovieTitle";
-            lblSelectedMovieTitle.Size = new Size(0, 15);
+            lblSelectedMovieTitle.Size = new Size(0, 25);
             lblSelectedMovieTitle.TabIndex = 51;
             // 
             // dgvNewReleases
@@ -248,8 +251,10 @@
             dgvNewReleases.BackgroundColor = SystemColors.HotTrack;
             dgvNewReleases.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvNewReleases.Location = new Point(0, 0);
+            dgvNewReleases.Margin = new Padding(4, 5, 4, 5);
             dgvNewReleases.Name = "dgvNewReleases";
-            dgvNewReleases.Size = new Size(700, 287);
+            dgvNewReleases.RowHeadersWidth = 62;
+            dgvNewReleases.Size = new Size(1000, 478);
             dgvNewReleases.TabIndex = 50;
             // 
             // panelOnHold
@@ -257,8 +262,9 @@
             panelOnHold.Controls.Add(dgvOnHold);
             panelOnHold.Dock = DockStyle.Fill;
             panelOnHold.Location = new Point(0, 0);
+            panelOnHold.Margin = new Padding(4, 5, 4, 5);
             panelOnHold.Name = "panelOnHold";
-            panelOnHold.Size = new Size(700, 348);
+            panelOnHold.Size = new Size(1000, 580);
             panelOnHold.TabIndex = 3;
             // 
             // dgvOnHold
@@ -267,16 +273,19 @@
             dgvOnHold.BackgroundColor = SystemColors.HotTrack;
             dgvOnHold.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvOnHold.Location = new Point(0, 0);
+            dgvOnHold.Margin = new Padding(4, 5, 4, 5);
             dgvOnHold.Name = "dgvOnHold";
-            dgvOnHold.Size = new Size(700, 345);
+            dgvOnHold.RowHeadersWidth = 62;
+            dgvOnHold.Size = new Size(1000, 575);
             dgvOnHold.TabIndex = 1;
             // 
             // panelPending
             // 
             panelPending.Dock = DockStyle.Fill;
             panelPending.Location = new Point(0, 0);
+            panelPending.Margin = new Padding(4, 5, 4, 5);
             panelPending.Name = "panelPending";
-            panelPending.Size = new Size(700, 348);
+            panelPending.Size = new Size(1000, 580);
             panelPending.TabIndex = 0;
             // 
             // panelAccount
@@ -301,8 +310,9 @@
             panelAccount.Controls.Add(lblFirstName);
             panelAccount.Dock = DockStyle.Fill;
             panelAccount.Location = new Point(0, 0);
+            panelAccount.Margin = new Padding(4, 5, 4, 5);
             panelAccount.Name = "panelAccount";
-            panelAccount.Size = new Size(700, 348);
+            panelAccount.Size = new Size(1000, 580);
             panelAccount.TabIndex = 2;
             // 
             // btnEditSave
@@ -333,12 +343,13 @@
             btnEditSave.Lighting = false;
             btnEditSave.LinearGradient_Background = false;
             btnEditSave.LinearGradientPen = false;
-            btnEditSave.Location = new Point(284, 293);
+            btnEditSave.Location = new Point(406, 488);
+            btnEditSave.Margin = new Padding(4, 5, 4, 5);
             btnEditSave.Name = "btnEditSave";
             btnEditSave.PenWidth = 15;
             btnEditSave.Rounding = true;
             btnEditSave.RoundingInt = 70;
-            btnEditSave.Size = new Size(130, 50);
+            btnEditSave.Size = new Size(186, 83);
             btnEditSave.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnEditSave.TabIndex = 16;
             btnEditSave.Tag = "Cyber";
@@ -365,13 +376,14 @@
             txtLastName.ForeColor = Color.FromArgb(245, 245, 245);
             txtLastName.Lighting = false;
             txtLastName.LinearGradientPen = false;
-            txtLastName.Location = new Point(303, 45);
+            txtLastName.Location = new Point(433, 75);
+            txtLastName.Margin = new Padding(4, 5, 4, 5);
             txtLastName.Name = "txtLastName";
             txtLastName.PenWidth = 15;
             txtLastName.RGB = false;
             txtLastName.Rounding = true;
             txtLastName.RoundingInt = 60;
-            txtLastName.Size = new Size(184, 30);
+            txtLastName.Size = new Size(263, 50);
             txtLastName.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtLastName.TabIndex = 15;
             txtLastName.Tag = "Cyber";
@@ -396,13 +408,14 @@
             txtPhone.ForeColor = Color.FromArgb(245, 245, 245);
             txtPhone.Lighting = false;
             txtPhone.LinearGradientPen = false;
-            txtPhone.Location = new Point(303, 78);
+            txtPhone.Location = new Point(433, 130);
+            txtPhone.Margin = new Padding(4, 5, 4, 5);
             txtPhone.Name = "txtPhone";
             txtPhone.PenWidth = 15;
             txtPhone.RGB = false;
             txtPhone.Rounding = true;
             txtPhone.RoundingInt = 60;
-            txtPhone.Size = new Size(184, 30);
+            txtPhone.Size = new Size(263, 50);
             txtPhone.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtPhone.TabIndex = 14;
             txtPhone.Tag = "Cyber";
@@ -428,13 +441,14 @@
             txtEmail.ForeColor = Color.FromArgb(245, 245, 245);
             txtEmail.Lighting = false;
             txtEmail.LinearGradientPen = false;
-            txtEmail.Location = new Point(303, 243);
+            txtEmail.Location = new Point(433, 405);
+            txtEmail.Margin = new Padding(4, 5, 4, 5);
             txtEmail.Name = "txtEmail";
             txtEmail.PenWidth = 15;
             txtEmail.RGB = false;
             txtEmail.Rounding = true;
             txtEmail.RoundingInt = 60;
-            txtEmail.Size = new Size(184, 30);
+            txtEmail.Size = new Size(263, 50);
             txtEmail.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtEmail.TabIndex = 13;
             txtEmail.Tag = "Cyber";
@@ -459,13 +473,14 @@
             txtPostalCode.ForeColor = Color.FromArgb(245, 245, 245);
             txtPostalCode.Lighting = false;
             txtPostalCode.LinearGradientPen = false;
-            txtPostalCode.Location = new Point(303, 210);
+            txtPostalCode.Location = new Point(433, 350);
+            txtPostalCode.Margin = new Padding(4, 5, 4, 5);
             txtPostalCode.Name = "txtPostalCode";
             txtPostalCode.PenWidth = 15;
             txtPostalCode.RGB = false;
             txtPostalCode.Rounding = true;
             txtPostalCode.RoundingInt = 60;
-            txtPostalCode.Size = new Size(184, 30);
+            txtPostalCode.Size = new Size(263, 50);
             txtPostalCode.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtPostalCode.TabIndex = 12;
             txtPostalCode.Tag = "Cyber";
@@ -490,13 +505,14 @@
             txtProvince.ForeColor = Color.FromArgb(245, 245, 245);
             txtProvince.Lighting = false;
             txtProvince.LinearGradientPen = false;
-            txtProvince.Location = new Point(303, 177);
+            txtProvince.Location = new Point(433, 295);
+            txtProvince.Margin = new Padding(4, 5, 4, 5);
             txtProvince.Name = "txtProvince";
             txtProvince.PenWidth = 15;
             txtProvince.RGB = false;
             txtProvince.Rounding = true;
             txtProvince.RoundingInt = 60;
-            txtProvince.Size = new Size(184, 30);
+            txtProvince.Size = new Size(263, 50);
             txtProvince.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtProvince.TabIndex = 11;
             txtProvince.Tag = "Cyber";
@@ -521,13 +537,14 @@
             txtAddress.ForeColor = Color.FromArgb(245, 245, 245);
             txtAddress.Lighting = false;
             txtAddress.LinearGradientPen = false;
-            txtAddress.Location = new Point(303, 111);
+            txtAddress.Location = new Point(433, 185);
+            txtAddress.Margin = new Padding(4, 5, 4, 5);
             txtAddress.Name = "txtAddress";
             txtAddress.PenWidth = 15;
             txtAddress.RGB = false;
             txtAddress.Rounding = true;
             txtAddress.RoundingInt = 60;
-            txtAddress.Size = new Size(184, 30);
+            txtAddress.Size = new Size(263, 50);
             txtAddress.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtAddress.TabIndex = 10;
             txtAddress.Tag = "Cyber";
@@ -552,13 +569,14 @@
             txtCity.ForeColor = Color.FromArgb(245, 245, 245);
             txtCity.Lighting = false;
             txtCity.LinearGradientPen = false;
-            txtCity.Location = new Point(303, 144);
+            txtCity.Location = new Point(433, 240);
+            txtCity.Margin = new Padding(4, 5, 4, 5);
             txtCity.Name = "txtCity";
             txtCity.PenWidth = 15;
             txtCity.RGB = false;
             txtCity.Rounding = true;
             txtCity.RoundingInt = 60;
-            txtCity.Size = new Size(184, 30);
+            txtCity.Size = new Size(263, 50);
             txtCity.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtCity.TabIndex = 9;
             txtCity.Tag = "Cyber";
@@ -583,13 +601,14 @@
             txtFirstName.ForeColor = Color.FromArgb(245, 245, 245);
             txtFirstName.Lighting = false;
             txtFirstName.LinearGradientPen = false;
-            txtFirstName.Location = new Point(303, 12);
+            txtFirstName.Location = new Point(433, 20);
+            txtFirstName.Margin = new Padding(4, 5, 4, 5);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.PenWidth = 15;
             txtFirstName.RGB = false;
             txtFirstName.Rounding = true;
             txtFirstName.RoundingInt = 60;
-            txtFirstName.Size = new Size(184, 30);
+            txtFirstName.Size = new Size(263, 50);
             txtFirstName.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtFirstName.TabIndex = 8;
             txtFirstName.Tag = "Cyber";
@@ -600,72 +619,80 @@
             // lblEmail
             // 
             lblEmail.Anchor = AnchorStyles.None;
-            lblEmail.Location = new Point(247, 255);
+            lblEmail.Location = new Point(353, 425);
+            lblEmail.Margin = new Padding(4, 0, 4, 0);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(39, 15);
+            lblEmail.Size = new Size(56, 25);
             lblEmail.TabIndex = 7;
             lblEmail.Text = "Email:";
             // 
             // lblPostalCode
             // 
             lblPostalCode.Anchor = AnchorStyles.None;
-            lblPostalCode.Location = new Point(213, 222);
+            lblPostalCode.Location = new Point(304, 370);
+            lblPostalCode.Margin = new Padding(4, 0, 4, 0);
             lblPostalCode.Name = "lblPostalCode";
-            lblPostalCode.Size = new Size(73, 15);
+            lblPostalCode.Size = new Size(104, 25);
             lblPostalCode.TabIndex = 6;
             lblPostalCode.Text = "Postal Code:";
             // 
             // lblProvince
             // 
             lblProvince.Anchor = AnchorStyles.None;
-            lblProvince.Location = new Point(230, 189);
+            lblProvince.Location = new Point(329, 315);
+            lblProvince.Margin = new Padding(4, 0, 4, 0);
             lblProvince.Name = "lblProvince";
-            lblProvince.Size = new Size(56, 15);
+            lblProvince.Size = new Size(80, 25);
             lblProvince.TabIndex = 5;
             lblProvince.Text = "Province:";
             // 
             // lblCity
             // 
             lblCity.Anchor = AnchorStyles.None;
-            lblCity.Location = new Point(255, 156);
+            lblCity.Location = new Point(364, 260);
+            lblCity.Margin = new Padding(4, 0, 4, 0);
             lblCity.Name = "lblCity";
-            lblCity.Size = new Size(31, 15);
+            lblCity.Size = new Size(44, 25);
             lblCity.TabIndex = 4;
             lblCity.Text = "City:";
             // 
             // lblAddress
             // 
             lblAddress.Anchor = AnchorStyles.None;
-            lblAddress.Location = new Point(234, 123);
+            lblAddress.Location = new Point(334, 205);
+            lblAddress.Margin = new Padding(4, 0, 4, 0);
             lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(52, 15);
+            lblAddress.Size = new Size(74, 25);
             lblAddress.TabIndex = 3;
             lblAddress.Text = "Address:";
             // 
             // lblPhone
             // 
             lblPhone.Anchor = AnchorStyles.None;
-            lblPhone.Location = new Point(242, 90);
+            lblPhone.Location = new Point(346, 150);
+            lblPhone.Margin = new Padding(4, 0, 4, 0);
             lblPhone.Name = "lblPhone";
-            lblPhone.Size = new Size(44, 15);
+            lblPhone.Size = new Size(63, 25);
             lblPhone.TabIndex = 2;
             lblPhone.Text = "Phone:";
             // 
             // lblLastName
             // 
             lblLastName.Anchor = AnchorStyles.None;
-            lblLastName.Location = new Point(220, 57);
+            lblLastName.Location = new Point(314, 95);
+            lblLastName.Margin = new Padding(4, 0, 4, 0);
             lblLastName.Name = "lblLastName";
-            lblLastName.Size = new Size(66, 15);
+            lblLastName.Size = new Size(94, 25);
             lblLastName.TabIndex = 1;
             lblLastName.Text = "Last Name:";
             // 
             // lblFirstName
             // 
             lblFirstName.Anchor = AnchorStyles.None;
-            lblFirstName.Location = new Point(219, 24);
+            lblFirstName.Location = new Point(313, 40);
+            lblFirstName.Margin = new Padding(4, 0, 4, 0);
             lblFirstName.Name = "lblFirstName";
-            lblFirstName.Size = new Size(67, 15);
+            lblFirstName.Size = new Size(96, 25);
             lblFirstName.TabIndex = 0;
             lblFirstName.Text = "First Name:";
             // 
@@ -679,10 +706,31 @@
             panelMainContainer.Controls.Add(panelNewReleases);
             panelMainContainer.Controls.Add(panelAccount);
             panelMainContainer.Controls.Add(panelPending);
-            panelMainContainer.Location = new Point(0, 24);
+            panelMainContainer.Location = new Point(0, 40);
+            panelMainContainer.Margin = new Padding(4, 5, 4, 5);
             panelMainContainer.Name = "panelMainContainer";
-            panelMainContainer.Size = new Size(700, 348);
+            panelMainContainer.Size = new Size(1000, 580);
             panelMainContainer.TabIndex = 1;
+            // 
+            // panelRentalRecords
+            // 
+            panelRentalRecords.Controls.Add(dgvRentalRecords);
+            panelRentalRecords.Location = new Point(0, 0);
+            panelRentalRecords.Margin = new Padding(4, 5, 4, 5);
+            panelRentalRecords.Name = "panelRentalRecords";
+            panelRentalRecords.Size = new Size(1000, 580);
+            panelRentalRecords.TabIndex = 4;
+            // 
+            // dgvRentalRecords
+            // 
+            dgvRentalRecords.BackgroundColor = SystemColors.HotTrack;
+            dgvRentalRecords.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvRentalRecords.Location = new Point(0, 0);
+            dgvRentalRecords.Margin = new Padding(4, 5, 4, 5);
+            dgvRentalRecords.Name = "dgvRentalRecords";
+            dgvRentalRecords.RowHeadersWidth = 62;
+            dgvRentalRecords.Size = new Size(1000, 580);
+            dgvRentalRecords.TabIndex = 0;
             // 
             // panelAllMovies
             // 
@@ -691,26 +739,10 @@
             panelAllMovies.Controls.Add(cmbSearchCriteria);
             panelAllMovies.Controls.Add(dgvAllMovies);
             panelAllMovies.Location = new Point(0, 0);
+            panelAllMovies.Margin = new Padding(4, 5, 4, 5);
             panelAllMovies.Name = "panelAllMovies";
-            panelAllMovies.Size = new Size(697, 345);
+            panelAllMovies.Size = new Size(996, 575);
             panelAllMovies.TabIndex = 2;
-            // 
-            // panelRentalRecords
-            // 
-            panelRentalRecords.Controls.Add(dgvRentalRecords);
-            panelRentalRecords.Location = new Point(0, 0);
-            panelRentalRecords.Name = "panelRentalRecords";
-            panelRentalRecords.Size = new Size(700, 348);
-            panelRentalRecords.TabIndex = 4;
-            // 
-            // dgvRentalRecords
-            // 
-            dgvRentalRecords.BackgroundColor = SystemColors.HotTrack;
-            dgvRentalRecords.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRentalRecords.Location = new Point(0, 0);
-            dgvRentalRecords.Name = "dgvRentalRecords";
-            dgvRentalRecords.Size = new Size(700, 348);
-            dgvRentalRecords.TabIndex = 0;
             // 
             // btnSearchMovies
             // 
@@ -738,12 +770,13 @@
             btnSearchMovies.Lighting = false;
             btnSearchMovies.LinearGradient_Background = false;
             btnSearchMovies.LinearGradientPen = false;
-            btnSearchMovies.Location = new Point(252, 60);
+            btnSearchMovies.Location = new Point(360, 100);
+            btnSearchMovies.Margin = new Padding(4, 5, 4, 5);
             btnSearchMovies.Name = "btnSearchMovies";
             btnSearchMovies.PenWidth = 15;
             btnSearchMovies.Rounding = true;
             btnSearchMovies.RoundingInt = 70;
-            btnSearchMovies.Size = new Size(130, 50);
+            btnSearchMovies.Size = new Size(186, 83);
             btnSearchMovies.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnSearchMovies.TabIndex = 3;
             btnSearchMovies.Tag = "Cyber";
@@ -769,13 +802,14 @@
             txtSearchAllMovies.ForeColor = Color.FromArgb(245, 245, 245);
             txtSearchAllMovies.Lighting = false;
             txtSearchAllMovies.LinearGradientPen = false;
-            txtSearchAllMovies.Location = new Point(320, 14);
+            txtSearchAllMovies.Location = new Point(457, 23);
+            txtSearchAllMovies.Margin = new Padding(4, 5, 4, 5);
             txtSearchAllMovies.Name = "txtSearchAllMovies";
             txtSearchAllMovies.PenWidth = 15;
             txtSearchAllMovies.RGB = false;
             txtSearchAllMovies.Rounding = true;
             txtSearchAllMovies.RoundingInt = 60;
-            txtSearchAllMovies.Size = new Size(200, 40);
+            txtSearchAllMovies.Size = new Size(286, 67);
             txtSearchAllMovies.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             txtSearchAllMovies.TabIndex = 2;
             txtSearchAllMovies.Tag = "Cyber";
@@ -787,9 +821,10 @@
             // 
             cmbSearchCriteria.FormattingEnabled = true;
             cmbSearchCriteria.Items.AddRange(new object[] { "Title", "Genre", "Actor Name" });
-            cmbSearchCriteria.Location = new Point(177, 21);
+            cmbSearchCriteria.Location = new Point(253, 35);
+            cmbSearchCriteria.Margin = new Padding(4, 5, 4, 5);
             cmbSearchCriteria.Name = "cmbSearchCriteria";
-            cmbSearchCriteria.Size = new Size(121, 23);
+            cmbSearchCriteria.Size = new Size(171, 33);
             cmbSearchCriteria.TabIndex = 1;
             cmbSearchCriteria.Text = "Search By...";
             // 
@@ -797,17 +832,20 @@
             // 
             dgvAllMovies.BackgroundColor = SystemColors.HotTrack;
             dgvAllMovies.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvAllMovies.Location = new Point(0, 114);
+            dgvAllMovies.Location = new Point(0, 190);
+            dgvAllMovies.Margin = new Padding(4, 5, 4, 5);
             dgvAllMovies.Name = "dgvAllMovies";
-            dgvAllMovies.Size = new Size(700, 234);
+            dgvAllMovies.RowHeadersWidth = 62;
+            dgvAllMovies.Size = new Size(1000, 390);
             dgvAllMovies.TabIndex = 0;
             // 
             // panelWelcome
             // 
             panelWelcome.Controls.Add(lblWelcome);
             panelWelcome.Location = new Point(0, 0);
+            panelWelcome.Margin = new Padding(4, 5, 4, 5);
             panelWelcome.Name = "panelWelcome";
-            panelWelcome.Size = new Size(700, 348);
+            panelWelcome.Size = new Size(1000, 580);
             panelWelcome.TabIndex = 2;
             panelWelcome.Paint += panelWelcome_Paint;
             // 
@@ -815,9 +853,10 @@
             // 
             lblWelcome.AutoSize = true;
             lblWelcome.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWelcome.Location = new Point(296, 108);
+            lblWelcome.Location = new Point(423, 180);
+            lblWelcome.Margin = new Padding(4, 0, 4, 0);
             lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(109, 30);
+            lblWelcome.Size = new Size(167, 45);
             lblWelcome.TabIndex = 0;
             lblWelcome.Text = "Welcome ";
             lblWelcome.TextAlign = ContentAlignment.MiddleCenter;
@@ -827,8 +866,9 @@
             panelWatchList.Controls.Add(btnUpdateOrder);
             panelWatchList.Controls.Add(dgvWatchlist);
             panelWatchList.Location = new Point(0, 0);
+            panelWatchList.Margin = new Padding(4, 5, 4, 5);
             panelWatchList.Name = "panelWatchList";
-            panelWatchList.Size = new Size(700, 348);
+            panelWatchList.Size = new Size(1000, 580);
             panelWatchList.TabIndex = 53;
             // 
             // btnUpdateOrder
@@ -857,12 +897,13 @@
             btnUpdateOrder.Lighting = false;
             btnUpdateOrder.LinearGradient_Background = false;
             btnUpdateOrder.LinearGradientPen = false;
-            btnUpdateOrder.Location = new Point(284, 286);
+            btnUpdateOrder.Location = new Point(406, 477);
+            btnUpdateOrder.Margin = new Padding(4, 5, 4, 5);
             btnUpdateOrder.Name = "btnUpdateOrder";
             btnUpdateOrder.PenWidth = 15;
             btnUpdateOrder.Rounding = true;
             btnUpdateOrder.RoundingInt = 70;
-            btnUpdateOrder.Size = new Size(130, 50);
+            btnUpdateOrder.Size = new Size(186, 83);
             btnUpdateOrder.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             btnUpdateOrder.TabIndex = 1;
             btnUpdateOrder.Tag = "Cyber";
@@ -876,21 +917,24 @@
             dgvWatchlist.BackgroundColor = SystemColors.HotTrack;
             dgvWatchlist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvWatchlist.Location = new Point(0, 0);
+            dgvWatchlist.Margin = new Padding(4, 5, 4, 5);
             dgvWatchlist.Name = "dgvWatchlist";
-            dgvWatchlist.Size = new Size(709, 273);
+            dgvWatchlist.RowHeadersWidth = 62;
+            dgvWatchlist.Size = new Size(1013, 455);
             dgvWatchlist.TabIndex = 0;
             // 
             // customerPortal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = SystemColors.HotTrack;
-            ClientSize = new Size(700, 372);
+            ClientSize = new Size(1000, 620);
             Controls.Add(panelMainContainer);
             Controls.Add(crownMenuStrip1);
+            FormBorderStyle = FormBorderStyle.None;
             MainMenuStrip = crownMenuStrip1;
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "customerPortal";
             Text = "Customer Portal";
             crownMenuStrip1.ResumeLayout(false);
@@ -902,9 +946,9 @@
             ((System.ComponentModel.ISupportInitialize)dgvOnHold).EndInit();
             panelAccount.ResumeLayout(false);
             panelMainContainer.ResumeLayout(false);
-            panelAllMovies.ResumeLayout(false);
             panelRentalRecords.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvRentalRecords).EndInit();
+            panelAllMovies.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvAllMovies).EndInit();
             panelWelcome.ResumeLayout(false);
             panelWelcome.PerformLayout();

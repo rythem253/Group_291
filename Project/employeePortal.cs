@@ -32,6 +32,7 @@ namespace Project
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            Main.load_login();
             this.Close();
         }
 

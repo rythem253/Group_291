@@ -67,8 +67,11 @@ namespace Project
                             int customerId = Convert.ToInt32(result);
 
                             customerPortal portal = new customerPortal(connectionString,customerId);
+                            portal.TopLevel = false;
+
+                            Main.mainPanel.Controls.Clear();
+                            Main.mainPanel.Controls.Add(portal);
                             portal.Show();
-                            this.Hide();
                         }
                         else
                         {
