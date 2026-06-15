@@ -156,6 +156,7 @@
             Controls.Add(btnInventory);
             Name = "employeePortal";
             Text = "employeePortal";
+            Load += employeePortal_Load;
             ResumeLayout(false);
             PerformLayout();
         }

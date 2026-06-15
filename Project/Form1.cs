@@ -11,7 +11,7 @@ namespace Project
         // Connection string to connect to the SQL Server database change for your local database
 
         private string connectionString =
-@"Server=localhost;Database=CMPT291_Team1_MovieRental;Trusted_Connection=True;TrustServerCertificate=True;";
+@"Server=(localdb)\MSSQLLocalDB;Database=CMPT291_Team1_MovieRental;Trusted_Connection=True;TrustServerCertificate=True;";
         public Form1()
         {
             if (Main.mainPanel == null)
@@ -45,6 +45,11 @@ namespace Project
             Main.mainPanel.Controls.Clear();
             Main.mainPanel.Controls.Add(employeeForm);
             employeeForm.Show();
+        }
+
+        private void SelectionScreen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

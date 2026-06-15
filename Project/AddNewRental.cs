@@ -20,12 +20,56 @@ namespace Project
 
         private void AddNewRental_Load(object sender, EventArgs e)
         {
-
+            label7.Text = "Due: --";
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rb1Day_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateDueDate();
+        }
+
+        private void rb3Day_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateDueDate();
+        }
+
+        private void rb7Day_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateDueDate();
+        }
+
+        private void UpdateDueDate()
+        {
+            if (!DateTime.TryParse(checkoutTxt.Text, out DateTime checkoutDate))
+            {
+                label7.Text = "Due: --";
+                return;
+            }
+
+            int daysToAdd = GetSelectedRentalDays();
+
+            if (daysToAdd == 0)
+            {
+                label7.Text = "Due: --";
+                return;
+            }
+
+            DateTime dueDate = checkoutDate.AddDays(daysToAdd);
+            label7.Text = "Due: " + dueDate.ToShortDateString();
+        }
+
+        private int GetSelectedRentalDays()
+        {
+            if (radioButton1.Checked) return 1;
+            if (radioButton2.Checked) return 3;
+            if (radioButton3.Checked) return 7;
+
+            return 0;
         }
 
         private void submitBtn_Click(object sender, EventArgs e)
@@ -44,13 +88,21 @@ namespace Project
 
             DateTime checkoutDate = DateTime.Parse(checkoutTxt.Text);
 
+            int rentalDays = GetSelectedRentalDays();
+            if (rentalDays == 0)
+            {
+                MessageBox.Show("Please select a rental length.");
+                return;
+            }
+            DateTime dueDate = checkoutDate.AddDays(rentalDays);
+
             string findRentNum = @"SELECT ISNULL(MAX(RentID), 0) FROM Rental";
 
             string insertRental = @"
                 INSERT INTO Rental
-                (RentID, EID, CID, CheckoutDate, Status, Rating)
+                (RentID, EID, CID, CheckoutDate, DueDate, Status, Rating)
                 VALUES
-                (@RentID, @EID, @CID, @CheckoutDate, @Status, @Rating)";
+                (@RentID, @EID, @CID, @CheckoutDate, @DueDate, @Status, @Rating)";
 
             string insertRented = @"
                 INSERT INTO Rented
@@ -68,7 +120,6 @@ namespace Project
                 {
                     conn.Open();
 
-                    // FIX: correct use of COUNT/MAX query
                     int RentID = Convert.ToInt32(cmdCount.ExecuteScalar()) + 1;
                     cmdMovieID.Parameters.AddWithValue("@parseMovieName", parseMovieName);
 
@@ -87,6 +138,7 @@ namespace Project
                     cmd.Parameters.AddWithValue("@EID", EID);
                     cmd.Parameters.AddWithValue("@CID", CID);
                     cmd.Parameters.AddWithValue("@CheckoutDate", checkoutDate);
+                    cmd.Parameters.AddWithValue("@DueDate", dueDate);
                     cmd.Parameters.AddWithValue("@Status", Status);
                     cmd.Parameters.AddWithValue("@Rating", (object)Rating ?? DBNull.Value);
 
@@ -96,7 +148,6 @@ namespace Project
 
                     cmd.ExecuteNonQuery();
                     cmd2.ExecuteNonQuery();
-
 
                     MessageBox.Show("Inserted successfully!");
                 }
@@ -109,7 +160,7 @@ namespace Project
 
         private void checkoutTxt_TextChanged(object sender, EventArgs e)
         {
-
+            UpdateDueDate();
         }
     }
 }
