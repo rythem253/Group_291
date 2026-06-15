@@ -50,7 +50,7 @@ namespace Project
                 cmd1.Parameters.AddWithValue("@RentID", RentID);
                 cmd1.ExecuteNonQuery();
 
-                SqlCommand cmd2 = new SqlCommand("UPDATE Movies SET Quantity = Quantity + 1 WHERE MovieID = (SELECT RT.MovieID FROM Rented as RT WHERE RT.RentID = @RentID)", conn);
+                SqlCommand cmd2 = new SqlCommand("UPDATE Movies SET Quantity = Quantity + 1 WHERE MovieID IN (SELECT RT.MovieID FROM Rented as RT WHERE RT.RentID = @RentID)", conn);
                 cmd2.Parameters.AddWithValue("@RentID", RentID);
                 cmd2.ExecuteNonQuery();
 
