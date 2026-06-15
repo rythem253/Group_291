@@ -43,6 +43,7 @@
             pictureBox1 = new PictureBox();
             pictureBox3 = new PictureBox();
             label3 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -103,7 +104,7 @@
             addBtn.Margin = new Padding(3, 2, 3, 2);
             addBtn.Name = "addBtn";
             addBtn.NoRounding = false;
-            addBtn.Size = new Size(120, 36);
+            addBtn.Size = new Size(120, 23);
             addBtn.TabIndex = 4;
             addBtn.Text = "Add New Rental";
             addBtn.Transparent = false;
@@ -123,6 +124,7 @@
             // 
             Searchbar.Location = new Point(22, 0);
             Searchbar.Name = "Searchbar";
+            Searchbar.PlaceholderText = "Search";
             Searchbar.Size = new Size(216, 23);
             Searchbar.TabIndex = 8;
             Searchbar.TextChanged += Searchbar_TextChanged;
@@ -199,12 +201,24 @@
             label3.Text = "Date Order";
             label3.Click += label3_Click_1;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(522, 113);
+            button1.Name = "button1";
+            button1.Size = new Size(121, 23);
+            button1.TabIndex = 14;
+            button1.Text = "Return Rental";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // ManageRentals
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PeachPuff;
             ClientSize = new Size(700, 338);
+            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
@@ -247,5 +261,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private Label label3;
+        private Button button1;
     }
 }
