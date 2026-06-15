@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            btnManageCustomer = new ReaLTaiizor.Controls.Button();
             btnMovieCasting = new ReaLTaiizor.Controls.Button();
             btnRentals = new ReaLTaiizor.Controls.Button();
             btnLogout = new ReaLTaiizor.Controls.AirButton();
@@ -38,26 +37,6 @@
             skyLabel1 = new ReaLTaiizor.Controls.SkyLabel();
             btnInventory = new ReaLTaiizor.Controls.Button();
             SuspendLayout();
-            // 
-            // btnManageCustomer
-            // 
-            btnManageCustomer.BackColor = Color.Transparent;
-            btnManageCustomer.BorderColor = Color.FromArgb(32, 34, 37);
-            btnManageCustomer.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnManageCustomer.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnManageCustomer.Font = new Font("Microsoft Sans Serif", 12F);
-            btnManageCustomer.Image = null;
-            btnManageCustomer.ImageAlign = ContentAlignment.MiddleLeft;
-            btnManageCustomer.InactiveColor = SystemColors.ControlDarkDark;
-            btnManageCustomer.Location = new Point(315, 159);
-            btnManageCustomer.Name = "btnManageCustomer";
-            btnManageCustomer.PressedBorderColor = Color.Black;
-            btnManageCustomer.PressedColor = Color.FromArgb(165, 37, 37);
-            btnManageCustomer.Size = new Size(230, 50);
-            btnManageCustomer.TabIndex = 0;
-            btnManageCustomer.Text = "Manage Customers";
-            btnManageCustomer.TextAlignment = StringAlignment.Center;
-            btnManageCustomer.Click += btnManageCustomer_Click;
             // 
             // btnMovieCasting
             // 
@@ -69,7 +48,7 @@
             btnMovieCasting.Image = null;
             btnMovieCasting.ImageAlign = ContentAlignment.MiddleLeft;
             btnMovieCasting.InactiveColor = SystemColors.ControlDarkDark;
-            btnMovieCasting.Location = new Point(315, 230);
+            btnMovieCasting.Location = new Point(315, 180);
             btnMovieCasting.Name = "btnMovieCasting";
             btnMovieCasting.PressedBorderColor = Color.Black;
             btnMovieCasting.PressedColor = Color.FromArgb(165, 37, 37);
@@ -89,7 +68,7 @@
             btnRentals.Image = null;
             btnRentals.ImageAlign = ContentAlignment.MiddleLeft;
             btnRentals.InactiveColor = SystemColors.ControlDarkDark;
-            btnRentals.Location = new Point(315, 371);
+            btnRentals.Location = new Point(315, 321);
             btnRentals.Name = "btnRentals";
             btnRentals.PressedBorderColor = Color.Black;
             btnRentals.PressedColor = Color.FromArgb(165, 37, 37);
@@ -104,7 +83,7 @@
             btnLogout.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
             btnLogout.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLogout.Image = null;
-            btnLogout.Location = new Point(366, 458);
+            btnLogout.Location = new Point(369, 414);
             btnLogout.Name = "btnLogout";
             btnLogout.NoRounding = false;
             btnLogout.Size = new Size(125, 56);
@@ -153,7 +132,7 @@
             btnInventory.Image = null;
             btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
             btnInventory.InactiveColor = SystemColors.ControlDarkDark;
-            btnInventory.Location = new Point(315, 299);
+            btnInventory.Location = new Point(315, 249);
             btnInventory.Name = "btnInventory";
             btnInventory.PressedBorderColor = Color.Black;
             btnInventory.PressedColor = Color.FromArgb(165, 37, 37);
@@ -175,7 +154,6 @@
             Controls.Add(btnRentals);
             Controls.Add(btnMovieCasting);
             Controls.Add(btnInventory);
-            Controls.Add(btnManageCustomer);
             Name = "employeePortal";
             Text = "employeePortal";
             ResumeLayout(false);
@@ -183,8 +161,6 @@
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.Button btnManageCustomer;
         private ReaLTaiizor.Controls.Button btnMovieCasting;
         private ReaLTaiizor.Controls.Button btnRentals;
         private ReaLTaiizor.Controls.AirButton btnLogout;
