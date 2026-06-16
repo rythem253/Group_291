@@ -38,27 +38,6 @@
             btnInventory = new ReaLTaiizor.Controls.Button();
             SuspendLayout();
             // 
-            // btnManageCustomer
-            // 
-            btnManageCustomer.BackColor = Color.Transparent;
-            btnManageCustomer.BorderColor = Color.FromArgb(32, 34, 37);
-            btnManageCustomer.EnteredBorderColor = Color.FromArgb(165, 37, 37);
-            btnManageCustomer.EnteredColor = Color.FromArgb(32, 34, 37);
-            btnManageCustomer.Font = new Font("Microsoft Sans Serif", 12F);
-            btnManageCustomer.Image = null;
-            btnManageCustomer.ImageAlign = ContentAlignment.MiddleLeft;
-            btnManageCustomer.InactiveColor = SystemColors.ControlDarkDark;
-            btnManageCustomer.Location = new Point(394, 199);
-            btnManageCustomer.Margin = new Padding(4, 4, 4, 4);
-            btnManageCustomer.Name = "btnManageCustomer";
-            btnManageCustomer.PressedBorderColor = Color.Black;
-            btnManageCustomer.PressedColor = Color.FromArgb(165, 37, 37);
-            btnManageCustomer.Size = new Size(288, 62);
-            btnManageCustomer.TabIndex = 0;
-            btnManageCustomer.Text = "Manage Customers";
-            btnManageCustomer.TextAlignment = StringAlignment.Center;
-            btnManageCustomer.Click += btnManageCustomer_Click;
-            // 
             // btnMovieCasting
             // 
             btnMovieCasting.BackColor = Color.Transparent;
@@ -181,7 +160,6 @@
             Controls.Add(btnRentals);
             Controls.Add(btnMovieCasting);
             Controls.Add(btnInventory);
-            Controls.Add(btnManageCustomer);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 4, 4, 4);
             Name = "employeePortal";
