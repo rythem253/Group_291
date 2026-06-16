@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            btnManageCustomer = new ReaLTaiizor.Controls.Button();
             btnMovieCasting = new ReaLTaiizor.Controls.Button();
             btnRentals = new ReaLTaiizor.Controls.Button();
             btnLogout = new ReaLTaiizor.Controls.AirButton();
@@ -70,7 +69,7 @@
             btnMovieCasting.Image = null;
             btnMovieCasting.ImageAlign = ContentAlignment.MiddleLeft;
             btnMovieCasting.InactiveColor = SystemColors.ControlDarkDark;
-            btnMovieCasting.Location = new Point(394, 288);
+            btnMovieCasting.Location = new Point(315, 180);
             btnMovieCasting.Margin = new Padding(4, 4, 4, 4);
             btnMovieCasting.Name = "btnMovieCasting";
             btnMovieCasting.PressedBorderColor = Color.Black;
@@ -91,7 +90,7 @@
             btnRentals.Image = null;
             btnRentals.ImageAlign = ContentAlignment.MiddleLeft;
             btnRentals.InactiveColor = SystemColors.ControlDarkDark;
-            btnRentals.Location = new Point(394, 464);
+            btnRentals.Location = new Point(315, 321);
             btnRentals.Margin = new Padding(4, 4, 4, 4);
             btnRentals.Name = "btnRentals";
             btnRentals.PressedBorderColor = Color.Black;
@@ -107,7 +106,7 @@
             btnLogout.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
             btnLogout.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLogout.Image = null;
-            btnLogout.Location = new Point(458, 572);
+            btnLogout.Location = new Point(369, 414);
             btnLogout.Margin = new Padding(4, 4, 4, 4);
             btnLogout.Name = "btnLogout";
             btnLogout.NoRounding = false;
@@ -159,7 +158,7 @@
             btnInventory.Image = null;
             btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
             btnInventory.InactiveColor = SystemColors.ControlDarkDark;
-            btnInventory.Location = new Point(394, 374);
+            btnInventory.Location = new Point(315, 249);
             btnInventory.Margin = new Padding(4, 4, 4, 4);
             btnInventory.Name = "btnInventory";
             btnInventory.PressedBorderColor = Color.Black;
@@ -187,13 +186,12 @@
             Margin = new Padding(4, 4, 4, 4);
             Name = "employeePortal";
             Text = "employeePortal";
+            Load += employeePortal_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.Button btnManageCustomer;
         private ReaLTaiizor.Controls.Button btnMovieCasting;
         private ReaLTaiizor.Controls.Button btnRentals;
         private ReaLTaiizor.Controls.AirButton btnLogout;

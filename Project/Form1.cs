@@ -46,5 +46,10 @@ namespace Project
             Main.mainPanel.Controls.Add(employeeForm);
             employeeForm.Show();
         }
+
+        private void SelectionScreen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

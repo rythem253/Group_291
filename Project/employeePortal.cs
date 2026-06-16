@@ -22,7 +22,8 @@ namespace Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            MovieInventory movieInventory = new MovieInventory(connectionString);
+            movieInventory.Show();
         }
 
         private void parrotSegment1_Click(object sender, EventArgs e)
@@ -49,6 +50,11 @@ namespace Project
         }
 
         private void btnManageCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeePortal_Load(object sender, EventArgs e)
         {
 
         }
