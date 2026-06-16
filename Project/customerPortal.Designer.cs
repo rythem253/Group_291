@@ -30,6 +30,7 @@
         {
             crownContextMenuStrip1 = new ReaLTaiizor.Controls.CrownContextMenuStrip();
             crownMenuStrip1 = new ReaLTaiizor.Controls.CrownMenuStrip();
+            homeToolStripMenuItem = new ToolStripMenuItem();
             viewAllMoviesToolStripMenuItem = new ToolStripMenuItem();
             newReleaseToolStripMenuItem = new ToolStripMenuItem();
             watchListToolStripMenuItem = new ToolStripMenuItem();
@@ -76,6 +77,7 @@
             panelWatchList = new Panel();
             btnUpdateOrder = new ReaLTaiizor.Controls.CyberButton();
             dgvWatchlist = new DataGridView();
+            airButton1 = new ReaLTaiizor.Controls.AirButton();
             crownMenuStrip1.SuspendLayout();
             panelNewReleases.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvNewReleases).BeginInit();
@@ -105,13 +107,22 @@
             crownMenuStrip1.BackColor = Color.FromArgb(60, 63, 65);
             crownMenuStrip1.ForeColor = Color.FromArgb(220, 220, 220);
             crownMenuStrip1.ImageScalingSize = new Size(20, 20);
-            crownMenuStrip1.Items.AddRange(new ToolStripItem[] { viewAllMoviesToolStripMenuItem, newReleaseToolStripMenuItem, watchListToolStripMenuItem, onHoldToolStripMenuItem, rentalsToolStripMenuItem, accountInformationToolStripMenuItem });
+            crownMenuStrip1.Items.AddRange(new ToolStripItem[] { homeToolStripMenuItem, viewAllMoviesToolStripMenuItem, newReleaseToolStripMenuItem, watchListToolStripMenuItem, onHoldToolStripMenuItem, rentalsToolStripMenuItem, accountInformationToolStripMenuItem });
             crownMenuStrip1.Location = new Point(0, 0);
             crownMenuStrip1.Name = "crownMenuStrip1";
             crownMenuStrip1.Padding = new Padding(4, 3, 0, 3);
             crownMenuStrip1.Size = new Size(1000, 35);
             crownMenuStrip1.TabIndex = 1;
             crownMenuStrip1.Text = "crownMenuStrip1";
+            // 
+            // homeToolStripMenuItem
+            // 
+            homeToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
+            homeToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
+            homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            homeToolStripMenuItem.Size = new Size(77, 29);
+            homeToolStripMenuItem.Text = "Home";
+            homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
             // viewAllMoviesToolStripMenuItem
             // 
@@ -698,10 +709,10 @@
             // 
             // panelMainContainer
             // 
+            panelMainContainer.Controls.Add(panelWelcome);
             panelMainContainer.Controls.Add(panelRentalRecords);
             panelMainContainer.Controls.Add(panelAllMovies);
             panelMainContainer.Controls.Add(panelOnHold);
-            panelMainContainer.Controls.Add(panelWelcome);
             panelMainContainer.Controls.Add(panelWatchList);
             panelMainContainer.Controls.Add(panelNewReleases);
             panelMainContainer.Controls.Add(panelAccount);
@@ -841,6 +852,7 @@
             // 
             // panelWelcome
             // 
+            panelWelcome.Controls.Add(airButton1);
             panelWelcome.Controls.Add(lblWelcome);
             panelWelcome.Location = new Point(0, 0);
             panelWelcome.Margin = new Padding(4, 5, 4, 5);
@@ -922,6 +934,20 @@
             dgvWatchlist.RowHeadersWidth = 62;
             dgvWatchlist.Size = new Size(1013, 455);
             dgvWatchlist.TabIndex = 0;
+            // 
+            // airButton1
+            // 
+            airButton1.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            airButton1.Font = new Font("Segoe UI", 9F);
+            airButton1.Image = null;
+            airButton1.Location = new Point(423, 370);
+            airButton1.Name = "airButton1";
+            airButton1.NoRounding = false;
+            airButton1.Size = new Size(150, 68);
+            airButton1.TabIndex = 1;
+            airButton1.Text = "Logout";
+            airButton1.Transparent = false;
+            airButton1.Click += airButton1_Click;
             // 
             // customerPortal
             // 
@@ -1013,5 +1039,7 @@
         private ReaLTaiizor.Controls.CyberTextBox txtSearchAllMovies;
         private Panel panelRentalRecords;
         private DataGridView dgvRentalRecords;
+        private ToolStripMenuItem homeToolStripMenuItem;
+        private ReaLTaiizor.Controls.AirButton airButton1;
     }
 }

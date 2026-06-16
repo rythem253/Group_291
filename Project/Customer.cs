@@ -66,8 +66,7 @@ namespace Project
                         {
                             int customerId = Convert.ToInt32(result);
 
-                            customerPortal portal = new customerPortal(connectionString,customerId);
-                            portal.TopLevel = false;
+                            customerPortal portal = new customerPortal(connectionString,customerId) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
 
                             Main.mainPanel.Controls.Clear();
                             Main.mainPanel.Controls.Add(portal);
