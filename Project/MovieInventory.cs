@@ -29,7 +29,7 @@ namespace Project
 
         private void MovieInventory_Load()
         {
-            string query = @"SELECT Movies.Title, Movies.Quantity
+            string query = @"SELECT Movies.Title, Movies.Quantity, Movies.Price
                             FROM Movies";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
