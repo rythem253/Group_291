@@ -38,6 +38,27 @@
             btnInventory = new ReaLTaiizor.Controls.Button();
             SuspendLayout();
             // 
+            // btnManageCustomer
+            // 
+            btnManageCustomer.BackColor = Color.Transparent;
+            btnManageCustomer.BorderColor = Color.FromArgb(32, 34, 37);
+            btnManageCustomer.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            btnManageCustomer.EnteredColor = Color.FromArgb(32, 34, 37);
+            btnManageCustomer.Font = new Font("Microsoft Sans Serif", 12F);
+            btnManageCustomer.Image = null;
+            btnManageCustomer.ImageAlign = ContentAlignment.MiddleLeft;
+            btnManageCustomer.InactiveColor = SystemColors.ControlDarkDark;
+            btnManageCustomer.Location = new Point(394, 199);
+            btnManageCustomer.Margin = new Padding(4, 4, 4, 4);
+            btnManageCustomer.Name = "btnManageCustomer";
+            btnManageCustomer.PressedBorderColor = Color.Black;
+            btnManageCustomer.PressedColor = Color.FromArgb(165, 37, 37);
+            btnManageCustomer.Size = new Size(288, 62);
+            btnManageCustomer.TabIndex = 0;
+            btnManageCustomer.Text = "Manage Customers";
+            btnManageCustomer.TextAlignment = StringAlignment.Center;
+            btnManageCustomer.Click += btnManageCustomer_Click;
+            // 
             // btnMovieCasting
             // 
             btnMovieCasting.BackColor = Color.Transparent;
@@ -49,10 +70,11 @@
             btnMovieCasting.ImageAlign = ContentAlignment.MiddleLeft;
             btnMovieCasting.InactiveColor = SystemColors.ControlDarkDark;
             btnMovieCasting.Location = new Point(315, 180);
+            btnMovieCasting.Margin = new Padding(4, 4, 4, 4);
             btnMovieCasting.Name = "btnMovieCasting";
             btnMovieCasting.PressedBorderColor = Color.Black;
             btnMovieCasting.PressedColor = Color.FromArgb(165, 37, 37);
-            btnMovieCasting.Size = new Size(230, 50);
+            btnMovieCasting.Size = new Size(288, 62);
             btnMovieCasting.TabIndex = 2;
             btnMovieCasting.Text = "Movie Casting";
             btnMovieCasting.TextAlignment = StringAlignment.Center;
@@ -69,10 +91,11 @@
             btnRentals.ImageAlign = ContentAlignment.MiddleLeft;
             btnRentals.InactiveColor = SystemColors.ControlDarkDark;
             btnRentals.Location = new Point(315, 321);
+            btnRentals.Margin = new Padding(4, 4, 4, 4);
             btnRentals.Name = "btnRentals";
             btnRentals.PressedBorderColor = Color.Black;
             btnRentals.PressedColor = Color.FromArgb(165, 37, 37);
-            btnRentals.Size = new Size(230, 50);
+            btnRentals.Size = new Size(288, 62);
             btnRentals.TabIndex = 3;
             btnRentals.Text = "Manage Rentals";
             btnRentals.TextAlignment = StringAlignment.Center;
@@ -84,9 +107,10 @@
             btnLogout.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLogout.Image = null;
             btnLogout.Location = new Point(369, 414);
+            btnLogout.Margin = new Padding(4, 4, 4, 4);
             btnLogout.Name = "btnLogout";
             btnLogout.NoRounding = false;
-            btnLogout.Size = new Size(125, 56);
+            btnLogout.Size = new Size(156, 70);
             btnLogout.TabIndex = 5;
             btnLogout.Text = "Logout";
             btnLogout.Transparent = false;
@@ -98,9 +122,10 @@
             bigLabel1.BackColor = Color.Transparent;
             bigLabel1.Font = new Font("Showcard Gothic", 25.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             bigLabel1.ForeColor = Color.Black;
-            bigLabel1.Location = new Point(315, 89);
+            bigLabel1.Location = new Point(394, 111);
+            bigLabel1.Margin = new Padding(4, 0, 4, 0);
             bigLabel1.Name = "bigLabel1";
-            bigLabel1.Size = new Size(230, 52);
+            bigLabel1.Size = new Size(280, 63);
             bigLabel1.TabIndex = 7;
             bigLabel1.Text = "Controls";
             // 
@@ -115,9 +140,10 @@
             skyLabel1.AutoSize = true;
             skyLabel1.Font = new Font("Verdana", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             skyLabel1.ForeColor = Color.FromArgb(27, 94, 137);
-            skyLabel1.Location = new Point(295, 9);
+            skyLabel1.Location = new Point(369, 11);
+            skyLabel1.Margin = new Padding(4, 0, 4, 0);
             skyLabel1.Name = "skyLabel1";
-            skyLabel1.Size = new Size(275, 34);
+            skyLabel1.Size = new Size(319, 40);
             skyLabel1.TabIndex = 8;
             skyLabel1.Text = "Employee Portal";
             skyLabel1.TextAlign = ContentAlignment.TopCenter;
@@ -133,10 +159,11 @@
             btnInventory.ImageAlign = ContentAlignment.MiddleLeft;
             btnInventory.InactiveColor = SystemColors.ControlDarkDark;
             btnInventory.Location = new Point(315, 249);
+            btnInventory.Margin = new Padding(4, 4, 4, 4);
             btnInventory.Name = "btnInventory";
             btnInventory.PressedBorderColor = Color.Black;
             btnInventory.PressedColor = Color.FromArgb(165, 37, 37);
-            btnInventory.Size = new Size(230, 50);
+            btnInventory.Size = new Size(288, 62);
             btnInventory.TabIndex = 1;
             btnInventory.Text = "Manage Movie Inventory";
             btnInventory.TextAlignment = StringAlignment.Center;
@@ -144,16 +171,19 @@
             // 
             // employeePortal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PeachPuff;
-            ClientSize = new Size(877, 556);
+            ClientSize = new Size(1096, 695);
             Controls.Add(skyLabel1);
             Controls.Add(bigLabel1);
             Controls.Add(btnLogout);
             Controls.Add(btnRentals);
             Controls.Add(btnMovieCasting);
             Controls.Add(btnInventory);
+            Controls.Add(btnManageCustomer);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "employeePortal";
             Text = "employeePortal";
             Load += employeePortal_Load;

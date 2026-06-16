@@ -844,5 +844,16 @@ namespace Project
                 dgvRentalRecords.Columns["ReturnDate"].HeaderText = "Date Returned";
             }
         }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowPanel(panelWelcome);
+            LoadRentalRecords(false);
+        }
+
+        private void airButton1_Click(object sender, EventArgs e)
+        {
+            Main.load_login();
+        }
     }
 }

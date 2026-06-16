@@ -19,8 +19,14 @@ namespace Project
             InitializeComponent();
             mainPanel = panView;
 
+            load_login();
+        }
+
+        public static void load_login()
+        {
             login = new Form1() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.panView.Controls.Add(login);
+            mainPanel.Controls.Clear();
+            mainPanel.Controls.Add(login);
             login.Show();
         }
     }

@@ -80,8 +80,13 @@ namespace Project
 
                 if (table.Rows.Count > 0)
                 {
-                    employeePortal EmployeePortal = new employeePortal(connectionString);
+                    employeePortal EmployeePortal = new employeePortal(connectionString) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
+                    Main.mainPanel.Controls.Clear();
+                    Main.mainPanel.Controls.Add(EmployeePortal);
                     EmployeePortal.Show();
+                    parent.Close();
+                    this.Close();
                 }
                 else
                 {
